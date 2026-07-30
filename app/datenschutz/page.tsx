@@ -32,7 +32,7 @@ export default function Datenschutz() {
         <br />
         E-Mail: letstalk@nice-network.de
         <br />
-        Web: ki-souveraenitaet.nice-network.de
+        Web: ki-autonomie.nice-network.de
       </p>
 
       <h2>III. Arten der verarbeiteten Daten</h2>

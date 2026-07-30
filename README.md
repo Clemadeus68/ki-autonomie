@@ -32,7 +32,7 @@ npm run dev
 
 1. Neon-Datenbank anlegen (neues Projekt oder neue Database im bestehenden be-nice-crm-Neon-Projekt) und `DATABASE_URL` setzen.
 2. Vercel-Projekt anlegen, Repo verbinden, `DATABASE_URL` als Env-Var setzen.
-3. DNS: CNAME `ki-souveraenitaet` auf Vercel zeigen lassen.
+3. DNS: `A ki-autonomie.nice-network.de → 76.76.21.21` bei United Domains setzen.
 4. Impressum/Datenschutz mit echtem Text befüllen.
 5. Logo einbinden.
 
