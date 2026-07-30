@@ -2,16 +2,6 @@ export default function Datenschutz() {
   return (
     <div className="wrap legal">
       <h1>Datenschutzerklärung</h1>
-      <div className="placeholder-note">
-        Entwurf, kein Platzhalter mehr: Begriffsbestimmungen, Rechtsgrundlagen, Betroffenenrechte,
-        Löschfristen und die Aufsichtsbehörde sind wortgleich aus der bestehenden, anwaltlich erstellten
-        Datenschutzerklärung von nice-network.de übernommen (dort als „mit Unterstützung einer
-        spezialisierten Rechtsanwaltskanzlei erstellt" ausgewiesen). Die Abschnitte III, V, VI und X sind
-        neu geschrieben, weil diese Seite andere Technik nutzt als nice-network.de (Vercel/Neon statt
-        United Domains, kein Google Analytics, kein Cookiebot, kein Facebook-Pixel, kein Zoho). Vor
-        Livegang bitte kurz von derselben Stelle gegenlesen lassen, die auch die bestehende Erklärung
-        verantwortet.
-      </div>
 
       <h2>I. Begriffsbestimmungen</h2>
       <p>

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { notifyNewLead } from "@/lib/notify";
 
 export async function POST(req: NextRequest) {
   try {
@@ -21,6 +22,8 @@ export async function POST(req: NextRequest) {
         partner_slug: partnerSlug,
       },
     });
+
+    await notifyNewLead(lead);
 
     return NextResponse.json({ id: lead.id });
   } catch (err: unknown) {

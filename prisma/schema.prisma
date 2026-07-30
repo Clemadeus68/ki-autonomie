@@ -34,6 +34,7 @@ model Lead {
   telefon       String?
   nachricht     String?
   partner_slug  String?
+  erledigt      Boolean  @default(false)
   created_at    DateTime @default(now())
 
   partner Partner? @relation(fields: [partner_slug], references: [slug])
