@@ -23,24 +23,24 @@ export default function FooterBadges() {
   return (
     <>
       <div className="footer-badges">
-        <LightboxImage
-          src="/assets/badge-inqa.jpg"
-          alt="Autorisierter INQA-Coach 2026-2027"
-          className="badge-inqa"
-          onOpen={setFull}
-        />
+        <a
+          href="https://www.inqa.de/DE/angebote/inqa-coaching/informationen-fuer-kmu/uebersicht.html"
+          target="_blank"
+          rel="noopener"
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/assets/badge-inqa.jpg" alt="Autorisierter INQA-Coach 2026-2027" className="badge-inqa" />
+        </a>
         <LightboxImage
           src="/assets/badge-alchimedus-master.jpg"
           alt="Alchimedus Master"
           className="badge-alchimedus"
           onOpen={setFull}
         />
-        <LightboxImage
-          src="/assets/logo-alchimedus-network.png"
-          alt="Alchimedus Consulting Network"
-          className="badge-network"
-          onOpen={setFull}
-        />
+        <a href="https://www.alchimedus.de/" target="_blank" rel="noopener">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/assets/logo-alchimedus-network.png" alt="Alchimedus Consulting Network" className="badge-network" />
+        </a>
       </div>
       <div className={`lightbox-overlay${full ? " open" : ""}`} onClick={() => setFull(null)}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
