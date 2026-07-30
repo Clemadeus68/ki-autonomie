@@ -92,6 +92,7 @@ export const content = {
       "Mein Bekenntnis zu einer KI-Nutzung, die Rücksicht auf uns Menschen nimmt, war der Auslöser dafür, dass ich das Human-First AI Manifesto mitinitiiert habe.",
     ],
     manifestoBadge: "/assets/badge-humanfirst-ai.png",
+    manifestoUrl: "https://www.humanfirstaimanifesto.com/",
   },
 
   testimonials: {
@@ -131,7 +132,7 @@ export const content = {
     heading: "Lassen Sie uns unverbindlich sprechen.",
     intro: "30 Minuten reichen, um zu sehen, wo Ihr Unternehmen steht und ob es passt. Kein Pitch, kein Verkaufsdruck.",
     calendlyLabel: "Termin auf Calendly wählen →",
-    calendlyUrl: "https://calendly.com/meeting_mit_clemens/auf-kanal-deiner-wahl",
+    calendlyUrl: "https://calendly.com/meeting_mit_clemens/auf-kanal-deiner-wahl?month=2026-07",
     phoneLabel: "0621 33 93 71 06",
     phoneHref: "tel:+4962133937106",
     linkedinUrl: "https://www.linkedin.com/in/clemens-gutmann/",

@@ -44,8 +44,10 @@ export default async function Page({
   return (
     <>
       <header className="site-header pad-64">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/assets/logo.png" alt="be nice" />
+        <a href="/">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/assets/logo.png" alt="be nice" />
+        </a>
         <span className="eyebrow-nav">{content.nav.eyebrow}</span>
       </header>
 
@@ -148,8 +150,10 @@ export default async function Page({
               </p>
             ))}
             <div className="manifesto-badge">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={content.bio.manifestoBadge} alt="Human-First AI Manifesto Unterstützer" />
+              <a href={content.bio.manifestoUrl} target="_blank" rel="noopener">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={content.bio.manifestoBadge} alt="Human-First AI Manifesto Unterstützer" />
+              </a>
             </div>
           </div>
 
@@ -205,8 +209,10 @@ export default async function Page({
       <footer>
         <div className="footer-brand">
           <div className="stack">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/assets/logo-cropped.png" alt="be nice" />
+            <a href="/">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/assets/logo-cropped.png" alt="be nice" />
+            </a>
             <span>{content.footer.tagline}</span>
           </div>
         </div>
