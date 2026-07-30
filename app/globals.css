@@ -85,11 +85,11 @@ input, textarea { font-family: inherit; }
 .split-photo .text { padding: 80px 64px; display: flex; flex-direction: column; justify-content: center; gap: 4px; }
 
 .photo-tag {
-  display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 1.5px;
-  text-transform: uppercase; padding: 3px 10px; border-radius: 2px; margin: 0 0 14px;
+  align-self: flex-start; font-size: 12px; font-weight: 800; letter-spacing: 1.5px;
+  text-transform: uppercase; margin: 0 0 14px;
 }
-.tag-sie { background: rgba(63, 143, 137, 0.12); color: var(--teal); }
-.tag-ich { background: rgba(139, 197, 63, 0.15); color: var(--green-dim); }
+.tag-sie { color: var(--teal); }
+.tag-ich { color: var(--green-dim); }
 
 .photo-list { list-style: none; margin: 0 0 30px; padding: 0; display: flex; flex-direction: column; gap: 14px; }
 .photo-list li { margin: 0; padding-left: 24px; position: relative; }
