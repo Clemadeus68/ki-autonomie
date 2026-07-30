@@ -19,19 +19,17 @@ export const content = {
   },
 
   hero: {
-    eyebrow: "KI-EINFÜHRUNG FÜR DEN MITTELSTAND",
-    titleLine1: "KI-Einführung, die Ihrem Unternehmen gehört.",
-    titleAccent: "Nicht dem Anbieter.",
+    eyebrow: "KI-EINFÜHRUNG FÜR KMU UND MITTELSTAND",
+    titleLine1: "KI so einführen ohne Lockin-Effekte für Ihre Daten und IP! Mit voller Kostenkontrolle und jederzeitigem Modellwechsel",
+    titleAccent: "100% compliant",
     sub: "Ob Sie noch ganz am Anfang stehen oder längst wissen, wo KI ansetzen soll: Ich sorge dafür, dass Ihr Unternehmen dabei die Kontrolle behält. Über Kosten, über Daten, über die Entscheidungen selbst.",
     ctaLabel: "Unverbindliches Erstgespräch buchen →",
     ctaMeta: "30 Minuten, ohne Verkaufsdruck",
   },
 
   photoSection: {
-    ledeBefore: "Der Anstoß kommt selten aus der IT-Abteilung. Meistens ist es eine Mitarbeiterin, die morgens erzählt, was ChatGPT über Nacht für sie erledigt hat. Ein Wettbewerber, der plötzlich schneller wirkt. Oder ein Satz beim Abendessen: ",
-    ledeQuote: "„Papa, das macht doch heute die KI.“",
-    ledeAfter: " Der Auslöser ist fast egal. Entscheidend ist, was danach passiert.",
-    sub: "Und danach passiert in den meisten Unternehmen: nichts Geordnetes. Einzelne probieren ChatGPT auf eigene Faust aus. Niemand weiß genau, welche Daten dabei wohin wandern. Genau an diesem Punkt steige ich ein.",
+    ledeBefore: "Sie hören einen Vortrag und Ihre Phantasie kommt in Gang oder Sie sehen, was Ihre Wettbewerber bereits mit KI erreichen. Oder Ihre Standardsoftware kann vieles nicht aber eine Ablösung kommt nicht in Betracht. Wie wäre es, wenn man das "mit KI" lösen könnte?".
+    sub: "Und jetzt wissen Sie nicht, wo starten. Wie kann ich das managen? Was ist, wenn die Tokenkosten explodieren? Soll ich wirklich allen so ein Tool freischalten? Und was ist mit Kundenschutz und persönlichen Daten? Genau an diesem Punkt steige ich ein",
   },
 
   whereYouStand: {
@@ -39,7 +37,7 @@ export const content = {
     headingRest: "auch immer Sie stehen",
     paragraphs: [
       "Ich gehe zieloffen in das erste Gespräch, weil Unternehmen an ganz unterschiedlichen Punkten stehen. Manche wollen erst einmal grundsätzlich verstehen, wo KI im eigenen Betrieb überhaupt etwas bringt. Andere haben längst entschieden, dass alle Mitarbeitenden KI-Zugang bekommen sollen, und suchen jemanden, der das sauber umsetzt.",
-      "Wieder andere haben ganz konkrete Anwendungsfälle vor Augen, oder sie treibt ein diffuses Gefühl, den Anschluss zu verlieren. Der Grund entscheidet nicht darüber, ob ich helfen kann. Er entscheidet nur, wo wir anfangen.",
+      "Wieder andere haben ganz konkrete Anwendungsfälle vor Augen, oder sie treibt ein diffuses Gefühl, den Anschluss zu verlieren. Der konkrete Grund ist gar nicht so wichtig. Hauptsache, wir kommen ins Gespräch. Ich begleite Sie auf dem gesamten Weg, bis zu 80% staatlich gefördert",
     ],
   },
 
@@ -59,7 +57,7 @@ export const content = {
     rows: [
       {
         title: "Volle Kostenkontrolle",
-        text: "Zentrales KI-Management statt verstreuter Einzel-Lizenzen und unklarer Abrechnung.",
+        text: "Zentrales KI-Management statt verstreuter Einzel-Lizenzen und unklarer Abrechnung. Kostenrisiken durch Preissteigerung einzelner Modelle werden durch jederzeitige Möglichkeit des Modellwechsels optimal begrenzt",
       },
       {
         title: "Datenschutz & Datenautonomie",
@@ -84,8 +82,8 @@ export const content = {
     headingAccent: "Warum",
     headingRest: "das ausgerechnet ich mache",
     paragraphs: [
-      "Ich bin Volljurist und Managementberater mit fast drei Jahrzehnten unternehmerischer Praxis — Vertriebe für Business-Software (SAP, Oracle), Agenturen, mehrfach gegründet, Mittelstandsunternehmen in entscheidenden Phasen begleitet, als Berater, Anwalt und Aufsichtsrat.",
-      "Meine Haltung zu KI ist nicht die eines Technikers. KI ist ein organisatorisches, menschliches Führungsthema, und eines der Compliance. Für die reine Technik arbeite ich mit Spezialisten aus meinem Netzwerk.",
+      "Ich bin Volljurist und Managementberater mit fast drei Jahrzehnten Praxis in Management, Beratung und Unternehmertum. Ich habe mehrfach gegründet, Unternehmen und Agenturen geleitet, Mittelstandsunternehmen in entscheidenden Phasen begleitet und als Anwalt, Berater und Aufsichtsrat unterstützt. Meine Haltung zu KI ist nicht die eines Technikers. KI ist ein organisatorisches, menschliches Führungsthema und eines der Compliance und Datensicherheit. Für die Technik arbeite ich nahtlos mit Spezialisten aus meinem Netzwerk. Außerdem setze ich konsequent auf Multi-LLM-Plattformen mit Eigentümerschaft, Sitz und Hosting in Deutschland, die ich sorgfältig kuratiere und die ein ergänzendes hervorragendes Serviceangebot haben",
+      "Weitere Informationen zu mir finden Sie auf www.nice-network.de.",
     ],
   },
 
