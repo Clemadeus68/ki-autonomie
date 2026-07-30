@@ -25,7 +25,7 @@ export default async function AdminPage() {
 
   return (
     <div className="wrap-wide admin">
-      <h1>KI-Souveränität — Admin</h1>
+      <h1>KI-Autonomie — Admin</h1>
 
       <section>
         <h2>Partner</h2>

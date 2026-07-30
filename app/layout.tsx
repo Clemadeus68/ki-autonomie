@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "be nice — KI-Souveränität",
+  title: "be nice — KI-Autonomie",
   description:
     "KI-Einführung für den Mittelstand — mit be nice Managementberatung. Strategische Beratung von Clemens Gutmann.",
 };

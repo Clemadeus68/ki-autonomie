@@ -45,7 +45,7 @@ export default async function Page({
       <header className="site-header pad-64">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/assets/logo.png" alt="be nice" />
-        <span className="eyebrow-nav">KI-SOUVERÄNITÄT</span>
+        <span className="eyebrow-nav">KI-AUTONOMIE</span>
       </header>
 
       {partner && (

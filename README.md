@@ -1,6 +1,6 @@
-# ki-souveraenitaet
+# ki-autonomie
 
-Landingpage für die neue Berateridentität „KI-Souveränität" (KI-Einführung mit Fokus Kontrolle/Souveränität), geplant unter `ki-souveraenitaet.nice-network.de`.
+Landingpage für die neue Berateridentität „KI-Autonomie" (KI-Einführung mit Fokus Kontrolle/Souveränität), geplant unter einer Subdomain von nice-network.de (Name noch zu bestätigen).
 
 Stack identisch zu `be-nice-crm`: Next.js 16 (App Router), React 19, Prisma 7 + Postgres (Neon), Tailwind 4.
 
