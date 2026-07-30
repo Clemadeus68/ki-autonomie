@@ -81,11 +81,7 @@ export default async function Page({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/assets/clemens.png" alt="Clemens Gutmann" />
         <div className="text">
-          <p className="lede">
-            {content.photoSection.ledeBefore}
-            <em>{content.photoSection.ledeQuote}</em>
-            {content.photoSection.ledeAfter}
-          </p>
+          <p className="lede">{content.photoSection.lede}</p>
           <p className="sub">{content.photoSection.sub}</p>
         </div>
       </section>
