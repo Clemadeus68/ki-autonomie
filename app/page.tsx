@@ -5,6 +5,7 @@ import { prisma } from "@/lib/prisma";
 import ContactForm from "./ContactForm";
 import FooterBadges from "./Lightbox";
 import { content } from "./content";
+import { Boldify } from "@/lib/text";
 
 function sanitizeSlug(raw: string | string[] | undefined): string | null {
   if (typeof raw !== "string") return null;
@@ -81,8 +82,25 @@ export default async function Page({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/assets/clemens.png" alt="Clemens Gutmann" />
         <div className="text">
-          <p className="lede">{content.photoSection.lede}</p>
-          <p className="sub">{content.photoSection.sub}</p>
+          <span className="photo-tag tag-sie">{content.photoSection.sieLabel}</span>
+          <ul className="photo-list list-sie">
+            {content.photoSection.sieItems.map((item, i) => (
+              <li key={i}>
+                <Boldify text={item} />
+              </li>
+            ))}
+          </ul>
+
+          <span className="photo-tag tag-ich">{content.photoSection.ichLabel}</span>
+          <ul className="photo-list list-ich">
+            {content.photoSection.ichItems.map((item, i) => (
+              <li key={i}>
+                <Boldify text={item} />
+              </li>
+            ))}
+          </ul>
+
+          <p className="photo-close">{content.photoSection.close}</p>
         </div>
       </section>
 

@@ -8,6 +8,8 @@
 // Beispiel falsch:  "Sie sagte "So geht das nicht" und ging."
 // Zeilenumbrüche in langen Absätzen sind nur fürs Lesen im Editor da, sie
 // haben auf der Seite keine Wirkung (Leerzeichen statt Umbruch).
+// Manche Texte (z.B. sieItems/ichItems) erlauben **Wort** für fette
+// Hervorhebung einzelner Wörter, genau wie in WhatsApp.
 //
 // Änderung speichern (auf GitHub: "Commit changes") deployt die Seite
 // automatisch neu, meist innerhalb einer Minute live.
@@ -32,8 +34,19 @@ export const content = {
   },
 
   photoSection: {
-    lede: "Sie hören einen Vortrag und Ihre Phantasie kommt in Gang oder Sie sehen, was Ihre Wettbewerber bereits mit KI erreichen. Oder Ihre Standardsoftware kann vieles nicht aber eine Ablösung kommt nicht in Betracht. Wie wäre es, wenn man das „mit KI“ lösen könnte?",
-    sub: "Und jetzt wissen Sie nicht, wo starten. Wie kann ich das managen? Was ist, wenn die Tokenkosten explodieren? Soll ich wirklich allen so ein Tool freischalten? Und was ist mit Kundenschutz und persönlichen Daten? Genau an diesem Punkt steige ich ein.",
+    sieLabel: "Ihre Situation",
+    sieItems: [
+      "Ein **Vortrag**, der Ihre Phantasie in Gang bringt.",
+      "Ein **Wettbewerber**, der zeigt, was schon geht.",
+      "Eine **Standardsoftware**, die an ihre Grenzen kommt — eine Ablösung kommt trotzdem nicht infrage.",
+    ],
+    ichLabel: "Meine Beobachtung",
+    ichItems: [
+      "Sie wissen nicht, wo Sie **anfangen** sollen.",
+      "Sie fragen sich, wie sich das **managen** lässt, ohne dass die **Tokenkosten** explodieren.",
+      "Sie zögern, es **allen** freizuschalten — wegen **Kundenschutz** und **persönlichen Daten**.",
+    ],
+    close: "Genau an diesem Punkt steige ich ein.",
   },
 
   whereYouStand: {
