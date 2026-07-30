@@ -57,7 +57,7 @@ export default function ContactForm({ partnerSlug }: { partnerSlug: string | nul
           <a href="/datenschutz">Datenschutzerklärung</a> zur Beantwortung meiner Anfrage zu.
         </span>
       </label>
-      <button className="btn btn-primary" type="submit" disabled={status === "sending"}>
+      <button type="submit" disabled={status === "sending"}>
         {status === "sending" ? "Wird gesendet…" : "Nachricht senden"}
       </button>
       {status === "error" && <p className="status error">{errorMsg}</p>}

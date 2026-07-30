@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
 export const metadata: Metadata = {
-  title: "KI-Souveränität | be nice Managementberatung",
+  title: "be nice — KI-Souveränität",
   description:
-    "KI-Einführung, die Ihrem Unternehmen gehört, nicht dem Anbieter. Strategische Beratung für den Mittelstand von Clemens Gutmann, be nice Managementberatung.",
+    "KI-Einführung für den Mittelstand — mit be nice Managementberatung. Strategische Beratung von Clemens Gutmann.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="de">
+    <html lang="de" className={inter.variable}>
       <body>{children}</body>
     </html>
   );
