@@ -3,16 +3,21 @@ export default function Impressum() {
     <div className="wrap legal">
       <h1>Impressum</h1>
       <div className="placeholder-note">
-        Achtung, bitte vor Livegang prüfen: Das Impressum von nice-network.de nennt als
-        verantwortliche Stelle „nice network initiative circular economy e.V.“, nicht „Clemens Gutmann
-        Managementberatung“. Diese Seite verkauft aber die Beratungsleistung, nicht die Vereinstätigkeit.
-        Bitte bestätige, welcher Rechtsträger für die KI-Einführungsberatung tatsächlich haftet (du als
-        Einzelunternehmer, eine andere Rechtsform, oder doch der Verein), dann trage ich den korrekten
-        Text ein. Unten stehen vorläufig deine Kontaktdaten aus dem bestehenden Impressum.
+        Fast fertig, eine Sache fehlt noch: Die Datenschutzerklärung von nice-network.de nennt als
+        Verantwortlichen „Clemens Gutmann – be nice Organisationsberatung" (nicht den Verein) — diesen
+        Namen habe ich unten übernommen. Was mir zur vollständigen Impressumspflicht (§ 5 DDG) noch fehlt:
+        deine Rechtsform/Kleinunternehmerstatus (Einzelunternehmer ohne Handelsregistereintrag?) und ob du
+        eine USt-IdNr. angeben möchtest oder als Kleinunternehmer nach § 19 UStG darauf verzichtest. Sag
+        mir kurz Bescheid, dann ergänze ich das.
       </div>
-      <p>Clemens Gutmann<br />be nice Managementberatung</p>
       <p>
-        Haardtstr. 22<br />
+        Clemens Gutmann
+        <br />
+        be nice Organisationsberatung
+      </p>
+      <p>
+        Haardtstr. 22
+        <br />
         68163 Mannheim
       </p>
       <p>
