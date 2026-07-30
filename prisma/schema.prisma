@@ -1,0 +1,40 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Partner {
+  slug       String   @id
+  name       String
+  notiz      String?
+  created_at DateTime @default(now())
+
+  klicks Klick[]
+  leads  Lead[]
+}
+
+model Klick {
+  id            Int      @id @default(autoincrement())
+  partner_slug  String?
+  pfad          String
+  referrer      String?
+  user_agent    String?
+  created_at    DateTime @default(now())
+
+  partner Partner? @relation(fields: [partner_slug], references: [slug])
+}
+
+model Lead {
+  id            Int      @id @default(autoincrement())
+  name          String
+  email         String
+  telefon       String?
+  nachricht     String?
+  partner_slug  String?
+  created_at    DateTime @default(now())
+
+  partner Partner? @relation(fields: [partner_slug], references: [slug])
+}
