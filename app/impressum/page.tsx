@@ -4,7 +4,7 @@ export default function Impressum() {
       <h1>Impressum</h1>
       <div className="placeholder-note">
         Fast fertig, eine Sache fehlt noch: Die Datenschutzerklärung von nice-network.de nennt als
-        Verantwortlichen „Clemens Gutmann – be nice Organisationsberatung" (nicht den Verein) — diesen
+        Verantwortlichen „Clemens Gutmann – be nice Managementberatung" (nicht den Verein) — diesen
         Namen habe ich unten übernommen. Was mir zur vollständigen Impressumspflicht (§ 5 DDG) noch fehlt:
         deine Rechtsform/Kleinunternehmerstatus (Einzelunternehmer ohne Handelsregistereintrag?) und ob du
         eine USt-IdNr. angeben möchtest oder als Kleinunternehmer nach § 19 UStG darauf verzichtest. Sag
@@ -13,7 +13,7 @@ export default function Impressum() {
       <p>
         Clemens Gutmann
         <br />
-        be nice Organisationsberatung
+        be nice Managementberatung
       </p>
       <p>
         Haardtstr. 22

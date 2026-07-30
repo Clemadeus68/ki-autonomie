@@ -28,7 +28,7 @@ export default function Datenschutz() {
       <p>
         Clemens Gutmann
         <br />
-        Clemens Gutmann – be nice Organisationsberatung
+        Clemens Gutmann – be nice Managementberatung
         <br />
         E-Mail: letstalk@nice-network.de
         <br />
@@ -113,7 +113,7 @@ export default function Datenschutz() {
       </p>
 
       <p className="contact-note">
-        Kontakt zum Datenschutz: Clemens Gutmann · be nice Organisationsberatung · letstalk@nice-network.de
+        Kontakt zum Datenschutz: Clemens Gutmann · be nice Managementberatung · letstalk@nice-network.de
       </p>
     </div>
   );
