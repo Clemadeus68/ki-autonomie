@@ -147,6 +147,10 @@ export default async function Page({
                 {p}
               </p>
             ))}
+            <div className="manifesto-badge">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={content.bio.manifestoBadge} alt="Human-First AI Manifesto Unterstützer" />
+            </div>
           </div>
 
           <h3 className="subheading">{content.testimonials.heading}</h3>
