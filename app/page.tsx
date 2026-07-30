@@ -62,9 +62,7 @@ export default async function Page({
       <section className="hero pad-64">
         <span className="eyebrow">{content.hero.eyebrow}</span>
         <h1 className="hero-title">
-          {content.hero.titleLine1}
-          <br />
-          <span className="accent">{content.hero.titleAccent}</span>
+          {content.hero.titleLine1} <span className="accent">{content.hero.titleAccent}</span>
         </h1>
         <div className="hero-sub-grid">
           <p>{content.hero.sub}</p>
@@ -131,7 +129,7 @@ export default async function Page({
             {content.benefits.rows.map((row) => (
               <div className="row-label" key={row.title}>
                 <h3>{row.title}</h3>
-                <p>{row.text}</p>
+                <p className={row.highlight ? "highlight" : undefined}>{row.text}</p>
               </div>
             ))}
           </div>
@@ -148,6 +146,32 @@ export default async function Page({
               <p className="copy" key={i}>
                 {p}
               </p>
+            ))}
+          </div>
+
+          <h3 className="subheading">{content.testimonials.heading}</h3>
+          <div className="testimonial-grid">
+            {content.testimonials.items.map((t) => (
+              <div className="testimonial-card" key={t.name}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={t.avatar} alt={t.name} />
+                <p className="quote">{t.quote}</p>
+                <p className="name">{t.name}</p>
+                <p className="role">{t.role}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="subheading" style={{ marginBottom: 8 }}>
+            {content.clients.heading}
+          </h3>
+          <p className="clients-sub">{content.clients.sub}</p>
+          <div className="logo-grid">
+            {content.clients.logos.map((logo) => (
+              <a href={logo.url} target="_blank" rel="noopener" key={logo.alt}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={logo.src} alt={logo.alt} />
+              </a>
             ))}
           </div>
         </div>

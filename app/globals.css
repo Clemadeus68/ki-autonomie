@@ -60,8 +60,8 @@ input, textarea { font-family: inherit; }
   font-size: 13px; font-weight: 800; letter-spacing: 2px; color: var(--teal);
 }
 .hero-title {
-  font-size: 88px; line-height: 1.02; font-weight: 900; color: var(--ink);
-  margin: 24px 0 0; letter-spacing: -2px; max-width: 1100px; text-wrap: balance;
+  font-size: 64px; line-height: 1.15; font-weight: 900; color: var(--ink);
+  margin: 24px 0 0; letter-spacing: -1.5px; max-width: 1100px; text-wrap: balance;
 }
 .hero-title .accent { color: var(--green); }
 .hero-sub-grid {
@@ -108,9 +108,25 @@ input, textarea { font-family: inherit; }
 .row-label:last-child { border-bottom: 1px solid var(--border-dark); }
 .row-label h3 { font-size: 17px; font-weight: 700; color: var(--green); margin: 0; }
 .row-label p { font-size: 15px; color: var(--muted-dark2); margin: 0; }
+.row-label p.highlight { color: #fff; }
 
 /* Bio */
 .bio-section p { max-width: 760px; }
+.bio-section .subheading {
+  font-size: 22px; font-weight: 700; color: var(--ink); margin: 64px 0 32px;
+}
+.bio-section .clients-sub { font-size: 14px; color: var(--placeholder); margin: 0 0 24px; }
+
+.testimonial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.testimonial-card { background: #f1ece7; padding: 40px; text-align: center; }
+.testimonial-card img { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; margin-bottom: 24px; }
+.testimonial-card .quote { font-size: 15px; line-height: 1.7; color: var(--body); margin: 0 0 20px; }
+.testimonial-card .name { font-size: 15px; font-weight: 700; color: var(--ink); margin: 0; }
+.testimonial-card .role { font-size: 14px; color: var(--muted-light); margin: 2px 0 0; }
+
+.logo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.logo-grid a { display: block; background: #fff; border: 1px solid var(--border-light); padding: 20px; }
+.logo-grid img { width: 100%; height: 40px; object-fit: contain; }
 
 /* CTA / form */
 .cta-form-section { padding: 100px 64px; background: var(--green); }
@@ -172,6 +188,8 @@ footer { background: var(--ink); }
   .hero-sub-grid { grid-template-columns: 1fr !important; }
   .split-photo, .cta-form-grid { grid-template-columns: 1fr !important; }
   .row-label { grid-template-columns: 1fr !important; gap: 16px !important; }
+  .testimonial-grid { grid-template-columns: 1fr !important; }
+  .logo-grid { grid-template-columns: 1fr 1fr !important; }
   .pad-64, .hero, .block, .cta-form-section, .footer-brand, .footer-badges, .footer-bottom {
     padding-left: 24px !important; padding-right: 24px !important;
   }

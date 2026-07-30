@@ -76,8 +76,9 @@ export const content = {
         text: "Private-LLM-Lösungen auf eigenen, abgesicherten Cloud-Serverinstanzen.",
       },
       {
-        title: "2nd-Brain für Schlüsselmitarbeiter",
-        text: "RAG-basierte Systeme als Informations-Booster und Absicherung bei Ausfall.",
+        title: "Bis zu 80% staatliche Förderung",
+        text: "Beratungs- und Umsetzungsprojekte werden gefördert. Wir kümmern uns um die Formalitäten und prüfen die Voraussetzungen für Sie. Kostenfrei!",
+        highlight: true,
       },
     ],
   },
@@ -88,6 +89,39 @@ export const content = {
     paragraphs: [
       "Ich bin Volljurist und Managementberater mit fast drei Jahrzehnten Praxis in Management, Beratung und Unternehmertum. Ich habe mehrfach gegründet, Unternehmen und Agenturen geleitet, Mittelstandsunternehmen in entscheidenden Phasen begleitet und als Anwalt, Berater und Aufsichtsrat unterstützt. Meine Haltung zu KI ist nicht die eines Technikers. KI ist ein organisatorisches, menschliches Führungsthema und eines der Compliance und Datensicherheit. Für die Technik arbeite ich nahtlos mit Spezialisten aus meinem Netzwerk. Außerdem setze ich konsequent auf Multi-LLM-Plattformen mit Eigentümerschaft, Sitz und Hosting in Deutschland, die ich sorgfältig kuratiere und die ein ergänzendes hervorragendes Serviceangebot haben",
       "Weitere Informationen zu mir finden Sie auf www.nice-network.de.",
+    ],
+  },
+
+  testimonials: {
+    heading: "Was sagen Unternehmer über uns?",
+    items: [
+      {
+        avatar: "/assets/avatar-biffar.png",
+        quote: "„Wir arbeiten seit Jahren mit be nice. Das breite Erfahrungsspektrum, die Fähigkeit zuzuhören und pragmatische Lösungen in Rekordzeit zu entwickeln, beeindruckt mich an Clemens Gutmann und seinem Team immer wieder auf's Neue.“",
+        name: "Albrecht Biffar",
+        role: "CEO BIFFAR Energie",
+      },
+      {
+        avatar: "/assets/avatar-scholl.png",
+        quote: "„Clemens Gutmann und be nice vereinen Erfahrung, souveräne und kreative Beratung sowie Einfühlungsvermögen in Branchen und Ideen. Dazu kommt hervorragende und unkomplizierte Umsetzung. Eine klare Empfehlung!“",
+        name: "Aljoscha Scholl",
+        role: "Managing Director Scholl Real Estate Solutions",
+      },
+    ],
+  },
+
+  clients: {
+    heading: "Unsere Kunden",
+    sub: "Auszug aus unserer Kundenliste",
+    logos: [
+      { src: "/assets/logo-baufritz.png", alt: "Baufritz", url: "https://www.baufritz.com/de" },
+      { src: "/assets/logo-biffar.png", alt: "Biffar Energie", url: "https://biffar-energie.de/" },
+      { src: "/assets/logo-scholl.png", alt: "Scholl Real Estate Solutions", url: "https://www.scholl-solutions.de" },
+      { src: "/assets/logo-klimawirtschaft.png", alt: "Stiftung KlimaWirtschaft", url: "https://klimawirtschaft.org" },
+      { src: "/assets/logo-wwf.png", alt: "WWF", url: "https://www.wwf.de" },
+      { src: "/assets/logo-studioapplaus.png", alt: "Studio Applaus", url: "https://www.studioapplaus.de" },
+      { src: "/assets/logo-musealis.png", alt: "Musealis", url: "https://www.musealis.net" },
+      { src: "/assets/logo-mannheim.png", alt: "Stadt Mannheim", url: "https://www.mannheim.de/de" },
     ],
   },
 
