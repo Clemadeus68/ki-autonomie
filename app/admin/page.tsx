@@ -63,30 +63,32 @@ export default async function AdminPage() {
         <table>
           <thead>
             <tr>
-              <th>Datum</th>
-              <th>Name</th>
-              <th>E-Mail</th>
-              <th>Telefon</th>
-              <th>Nachricht</th>
+              <th>PID</th>
               <th>Partner</th>
+              <th>Zeitstempel</th>
+              <th>Nachricht</th>
+              <th>E-Mail</th>
+              <th>Name</th>
+              <th>Telefon</th>
             </tr>
           </thead>
           <tbody>
             {leads.map((l) => (
               <tr key={l.id}>
+                <td>{l.partner_slug ?? "—"}</td>
+                <td>{l.partner?.name ?? "—"}</td>
                 <td>{fmt(l.created_at)}</td>
-                <td>{l.name}</td>
+                <td>{l.nachricht ?? "—"}</td>
                 <td>
                   <a href={`mailto:${l.email}`}>{l.email}</a>
                 </td>
+                <td>{l.name}</td>
                 <td>{l.telefon ?? "—"}</td>
-                <td>{l.nachricht ?? "—"}</td>
-                <td>{l.partner?.name ?? "—"}</td>
               </tr>
             ))}
             {leads.length === 0 && (
               <tr>
-                <td colSpan={6}>Noch keine Leads.</td>
+                <td colSpan={7}>Noch keine Leads.</td>
               </tr>
             )}
           </tbody>
