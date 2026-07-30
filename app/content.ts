@@ -24,8 +24,8 @@ export const content = {
 
   hero: {
     eyebrow: "KI-EINFÜHRUNG FÜR KMU UND MITTELSTAND",
-    titleLine1: "KI so einführen ohne Lockin-Effekte für Ihre Daten und IP! Mit voller Kostenkontrolle und jederzeitigem Modellwechsel",
-    titleAccent: "100% compliant",
+    titleLine1: "KI so einführen ohne Lock-in-Effekte für Ihre Daten und IP! Mit voller Kostenkontrolle und jederzeitigem Modellwechsel.",
+    titleAccent: "100% compliant.",
     sub: "Ob Sie noch ganz am Anfang stehen oder längst wissen, wo KI ansetzen soll: Ich sorge dafür, dass Ihr Unternehmen dabei die Kontrolle behält. Über Kosten, über Daten, über die Entscheidungen selbst.",
     ctaLabel: "Unverbindliches Erstgespräch buchen →",
     ctaMeta: "30 Minuten, ohne Verkaufsdruck",
