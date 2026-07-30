@@ -244,3 +244,8 @@ footer { background: var(--ink); }
   font-size: 13px; color: var(--ink);
 }
 .admin-error { color: #b3261e; font-size: 13px; margin: 0 0 12px; }
+.admin-link-preview {
+  display: inline-block; max-width: 220px; overflow: hidden; text-overflow: ellipsis;
+  white-space: nowrap; vertical-align: middle; font-size: 12px; color: var(--muted-light);
+  margin-right: 8px;
+}

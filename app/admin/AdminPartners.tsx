@@ -19,6 +19,22 @@ export default function AdminPartners({ partners }: { partners: Partner[] }) {
   );
   const [busy, setBusy] = useState<string | null>(null);
   const [error, setError] = useState("");
+  const [copied, setCopied] = useState<string | null>(null);
+
+  function linkFor(slug: string) {
+    const origin = typeof window !== "undefined" ? window.location.origin : "";
+    return `${origin}/?ref=${slug}`;
+  }
+
+  async function copyLink(slug: string) {
+    try {
+      await navigator.clipboard.writeText(linkFor(slug));
+      setCopied(slug);
+      setTimeout(() => setCopied((c) => (c === slug ? null : c)), 1500);
+    } catch {
+      setError("Kopieren nicht möglich, bitte den Link manuell markieren.");
+    }
+  }
 
   async function addPartner(e: React.FormEvent) {
     e.preventDefault();
@@ -90,6 +106,7 @@ export default function AdminPartners({ partners }: { partners: Partner[] }) {
             <th>Klicks</th>
             <th>Leads</th>
             <th>Seit</th>
+            <th>Link</th>
             <th></th>
           </tr>
         </thead>
@@ -108,6 +125,10 @@ export default function AdminPartners({ partners }: { partners: Partner[] }) {
               <td>{p._count.leads}</td>
               <td>{new Intl.DateTimeFormat("de-DE", { dateStyle: "short", timeStyle: "short" }).format(new Date(p.created_at))}</td>
               <td>
+                <span className="admin-link-preview">{linkFor(p.slug)}</span>
+                <button onClick={() => copyLink(p.slug)}>{copied === p.slug ? "Kopiert!" : "Link kopieren"}</button>
+              </td>
+              <td>
                 <button
                   onClick={() => rename(p.slug)}
                   disabled={busy === p.slug || (names[p.slug] ?? p.name) === p.name}
@@ -119,7 +140,7 @@ export default function AdminPartners({ partners }: { partners: Partner[] }) {
           ))}
           {partners.length === 0 && (
             <tr>
-              <td colSpan={6}>Noch keine Partner-Aufrufe.</td>
+              <td colSpan={7}>Noch keine Partner-Aufrufe.</td>
             </tr>
           )}
         </tbody>
