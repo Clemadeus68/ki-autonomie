@@ -23,6 +23,9 @@ function fmt(d: string) {
 export default function AdminLeads({ leads }: { leads: Lead[] }) {
   const router = useRouter();
   const [busy, setBusy] = useState<number | null>(null);
+  const [pids, setPids] = useState<Record<number, string>>(
+    Object.fromEntries(leads.map((l) => [l.id, l.partner_slug ?? ""]))
+  );
 
   async function toggleErledigt(id: number, erledigt: boolean) {
     setBusy(id);
@@ -31,6 +34,20 @@ export default function AdminLeads({ leads }: { leads: Lead[] }) {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ erledigt }),
+      });
+      router.refresh();
+    } finally {
+      setBusy(null);
+    }
+  }
+
+  async function savePid(id: number) {
+    setBusy(id);
+    try {
+      await fetch(`/admin/leads/${id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ partner_slug: pids[id] }),
       });
       router.refresh();
     } finally {
@@ -70,7 +87,21 @@ export default function AdminLeads({ leads }: { leads: Lead[] }) {
         <tbody>
           {leads.map((l) => (
             <tr key={l.id} className={l.erledigt ? "admin-done" : undefined}>
-              <td>{l.partner_slug ?? "-"}</td>
+              <td>
+                <input
+                  className="admin-inline-input"
+                  placeholder="PID eintragen"
+                  value={pids[l.id] ?? ""}
+                  onChange={(e) => setPids((p) => ({ ...p, [l.id]: e.target.value }))}
+                  style={{ width: 110 }}
+                />
+                <button
+                  onClick={() => savePid(l.id)}
+                  disabled={busy === l.id || (pids[l.id] ?? "") === (l.partner_slug ?? "")}
+                >
+                  {busy === l.id ? "…" : "Speichern"}
+                </button>
+              </td>
               <td>{l.partner?.name ?? "-"}</td>
               <td>{fmt(l.created_at)}</td>
               <td>{l.nachricht ?? "-"}</td>
