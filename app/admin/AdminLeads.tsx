@@ -11,6 +11,7 @@ type Lead = {
   nachricht: string | null;
   partner_slug: string | null;
   erledigt: boolean;
+  ip: string | null;
   created_at: string;
   partner: { name: string } | null;
 };
@@ -61,6 +62,7 @@ export default function AdminLeads({ leads }: { leads: Lead[] }) {
             <th>E-Mail</th>
             <th>Name</th>
             <th>Telefon</th>
+            <th>IP</th>
             <th>Erledigt</th>
             <th></th>
           </tr>
@@ -77,6 +79,7 @@ export default function AdminLeads({ leads }: { leads: Lead[] }) {
               </td>
               <td>{l.name}</td>
               <td>{l.telefon ?? "-"}</td>
+              <td>{l.ip ?? "-"}</td>
               <td>
                 <input
                   type="checkbox"
@@ -94,7 +97,7 @@ export default function AdminLeads({ leads }: { leads: Lead[] }) {
           ))}
           {leads.length === 0 && (
             <tr>
-              <td colSpan={9}>Noch keine Leads.</td>
+              <td colSpan={10}>Noch keine Leads.</td>
             </tr>
           )}
         </tbody>

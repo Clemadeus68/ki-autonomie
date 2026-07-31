@@ -47,6 +47,7 @@ export default async function AdminPage() {
           nachricht: l.nachricht,
           partner_slug: l.partner_slug,
           erledigt: l.erledigt,
+          ip: l.ip,
           created_at: l.created_at.toISOString(),
           partner: l.partner ? { name: l.partner.name } : null,
         }))}

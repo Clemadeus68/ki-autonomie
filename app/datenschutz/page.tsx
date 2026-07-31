@@ -36,7 +36,10 @@ export default function Datenschutz() {
       <p>
         <strong>Kontaktaufnahme.</strong> Bei Nutzung des Kontaktformulars erfassen wir Name,
         E-Mail-Adresse, optional Telefonnummer und den Inhalt Ihrer Nachricht, sowie, falls Sie über
-        einen Empfehlungslink gekommen sind, die Zuordnung zum jeweiligen Partner.
+        einen Empfehlungslink gekommen sind, die Zuordnung zum jeweiligen Partner. Zusätzlich speichern
+        wir die IP-Adresse des Absenders zusammen mit der Anfrage, um das Formular vor automatisiertem
+        Missbrauch (Spam-Bots) zu schützen (Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO, berechtigtes
+        Interesse an einem funktionsfähigen, missbrauchsfreien Kontaktweg).
       </p>
 
       <h2>IV. Rechtsgrundlage für die Verarbeitung</h2>

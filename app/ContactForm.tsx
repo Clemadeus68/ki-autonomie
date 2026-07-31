@@ -25,6 +25,7 @@ export default function ContactForm({ partnerSlug }: { partnerSlug: string | nul
           email: data.get("email"),
           telefon: data.get("telefon"),
           nachricht: data.get("nachricht"),
+          website: data.get("website"),
           partnerSlug,
         }),
       });
@@ -46,6 +47,15 @@ export default function ContactForm({ partnerSlug }: { partnerSlug: string | nul
 
   return (
     <form className="lead-form" onSubmit={handleSubmit}>
+      {/* Honeypot gegen Formular-Bots: für Menschen unsichtbar, echte Nutzer lassen es leer */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="hp-field"
+      />
       <input type="text" name="name" placeholder="Name" required />
       <input type="email" name="email" placeholder="E-Mail-Adresse" required />
       <input type="tel" name="telefon" placeholder="Telefonnummer (optional)" />
