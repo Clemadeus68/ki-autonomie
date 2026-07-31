@@ -201,7 +201,7 @@ export default async function Page({
             {content.clients.logos.map((logo) => (
               <a href={logo.url} target="_blank" rel="noopener" key={logo.alt}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={logo.src} alt={logo.alt} />
+                <img src={logo.src} alt={logo.alt} style={{ height: logo.height }} />
               </a>
             ))}
           </div>

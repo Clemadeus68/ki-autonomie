@@ -151,11 +151,8 @@ input, textarea { font-family: inherit; }
 .testimonial-card .role { font-size: 14px; color: var(--muted-light); margin: 2px 0 0; }
 
 .logo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-.logo-grid a {
-  display: flex; align-items: center; justify-content: center; min-height: 76px;
-  background: #fff; border: 1px solid var(--border-light); padding: 16px;
-}
-.logo-grid img { max-width: 100%; max-height: 52px; width: auto; height: auto; object-fit: contain; }
+.logo-grid a { display: block; background: #fff; border: 1px solid var(--border-light); padding: 20px; }
+.logo-grid img { width: 100%; object-fit: contain; }
 
 /* CTA / form */
 .cta-form-section { padding: 100px 64px; background: var(--green); }
