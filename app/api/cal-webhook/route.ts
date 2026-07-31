@@ -1,20 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
-import crypto from "crypto";
 import { prisma } from "@/lib/prisma";
 import { notifyNewLead } from "@/lib/notify";
 
-// Cal.com signiert den Request-Body per HMAC-SHA256 mit dem beim Erstellen
-// des Webhooks hinterlegten "Secret" und schickt die Signatur im Header
-// x-cal-signature-256 (hex-kodiert).
-function verifySignature(rawBody: string, signature: string | null, secret: string | undefined): boolean {
-  if (!secret || !signature) return false;
-  const expected = crypto.createHmac("sha256", secret).update(rawBody).digest("hex");
-  try {
-    return crypto.timingSafeEqual(Buffer.from(expected), Buffer.from(signature));
-  } catch {
-    return false;
-  }
-}
+// Cal.com bietet auf dem Free-Plan kein "Secret"-Feld für den Webhook an,
+// obwohl trotzdem ein x-cal-signature-256-Header mitgeschickt wird - eine
+// Signaturprüfung ist damit nicht möglich (kein gemeinsames Geheimnis).
+// Bewusste Entscheidung: Requests trotzdem verarbeiten statt zu verwerfen -
+// diese Route legt nur Tracking-/Buchungsdaten an, keine sicherheitskritische
+// Aktion, und die URL ist nicht öffentlich beworben. Bei einem Upgrade auf
+// einen Cal.com-Plan mit Secret-Unterstützung lohnt sich eine echte Prüfung.
 
 // Versucht, eine PID aus verschiedenen möglichen Stellen im Cal.com-Payload
 // zu extrahieren. Cal.com hat keine feste Konvention dafür - je nachdem, wie
@@ -39,8 +33,7 @@ function extractPartnerSlug(payload: Record<string, unknown>): string | null {
 
 export async function POST(req: NextRequest) {
   const rawBody = await req.text();
-  const signature = req.headers.get("x-cal-signature-256");
-  const verified = verifySignature(rawBody, signature, process.env.CAL_WEBHOOK_SECRET);
+  const signaturePresent = !!req.headers.get("x-cal-signature-256");
 
   let json: any = null;
   try {
@@ -70,7 +63,7 @@ export async function POST(req: NextRequest) {
       start_time: payload.startTime ? new Date(payload.startTime) : null,
       partner_slug: partnerSlug,
       trigger_event: json?.triggerEvent ?? null,
-      raw_payload: { verified, headers_signature_present: !!signature, body: json ?? rawBody },
+      raw_payload: { headers_signature_present: signaturePresent, body: json ?? rawBody },
     },
   });
 
@@ -84,5 +77,5 @@ export async function POST(req: NextRequest) {
     });
   }
 
-  return NextResponse.json({ ok: true, id: booking.id, verified });
+  return NextResponse.json({ ok: true, id: booking.id });
 }
