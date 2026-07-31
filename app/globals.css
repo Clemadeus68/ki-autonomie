@@ -279,6 +279,7 @@ footer { background: var(--ink); }
   font-size: 13px; color: var(--ink);
 }
 .admin-error { color: #b3261e; font-size: 13px; margin: 0 0 12px; }
+.admin-hint { font-size: 13px; color: var(--muted-light); margin: 0 0 12px; }
 
 /* Teilen-Buttons */
 .share-buttons { display: flex; align-items: center; gap: 10px; }

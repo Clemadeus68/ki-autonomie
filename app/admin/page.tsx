@@ -3,6 +3,7 @@ export const dynamic = "force-dynamic";
 import { prisma } from "@/lib/prisma";
 import AdminPartners from "./AdminPartners";
 import AdminLeads from "./AdminLeads";
+import AdminBookings from "./AdminBookings";
 
 function fmt(d: Date) {
   return new Intl.DateTimeFormat("de-DE", { dateStyle: "short", timeStyle: "short" }).format(d);
@@ -58,47 +59,19 @@ export default async function AdminPage() {
         }))}
       />
 
-      <section>
-        <h2>Cal.com-Buchungen (Test/Debug, letzte 20)</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Datum</th>
-              <th>PID</th>
-              <th>Name</th>
-              <th>E-Mail</th>
-              <th>Event</th>
-              <th>Termin</th>
-              <th>Trigger</th>
-              <th>Rohdaten</th>
-            </tr>
-          </thead>
-          <tbody>
-            {bookings.map((b) => (
-              <tr key={b.id}>
-                <td>{fmt(b.created_at)}</td>
-                <td>{b.partner_slug ?? "-"}</td>
-                <td>{b.name ?? "-"}</td>
-                <td>{b.email ?? "-"}</td>
-                <td>{b.event_type ?? "-"}</td>
-                <td>{b.start_time ? fmt(b.start_time) : "-"}</td>
-                <td>{b.trigger_event ?? "-"}</td>
-                <td>
-                  <details>
-                    <summary>anzeigen</summary>
-                    <pre className="admin-raw">{JSON.stringify(b.raw_payload, null, 2)}</pre>
-                  </details>
-                </td>
-              </tr>
-            ))}
-            {bookings.length === 0 && (
-              <tr>
-                <td colSpan={8}>Noch keine Buchungen über den Webhook eingegangen.</td>
-              </tr>
-            )}
-          </tbody>
-        </table>
-      </section>
+      <AdminBookings
+        bookings={bookings.map((b) => ({
+          id: b.id,
+          name: b.name,
+          email: b.email,
+          event_type: b.event_type,
+          start_time: b.start_time ? b.start_time.toISOString() : null,
+          partner_slug: b.partner_slug,
+          trigger_event: b.trigger_event,
+          raw_payload: b.raw_payload,
+          created_at: b.created_at.toISOString(),
+        }))}
+      />
 
       <section>
         <h2>Letzte 20 Klicks</h2>
