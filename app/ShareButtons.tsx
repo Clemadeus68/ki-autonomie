@@ -2,9 +2,8 @@
 
 import { useState } from "react";
 
-function shareUrl(partnerSlug: string | null): string {
-  const origin = typeof window !== "undefined" ? window.location.origin : "";
-  return partnerSlug ? `${origin}/?ref=${partnerSlug}` : `${origin}/`;
+function shareUrl(baseUrl: string, partnerSlug: string | null): string {
+  return partnerSlug ? `${baseUrl}/?ref=${partnerSlug}` : `${baseUrl}/`;
 }
 
 const SHARE_TEXT = "KI-Autonomie – KI-Einführung für den Mittelstand, ohne Lock-in-Effekte:";
@@ -46,16 +45,18 @@ function LinkIcon() {
 
 export default function ShareButtons({
   partnerSlug,
+  baseUrl,
   className,
 }: {
   partnerSlug: string | null;
+  baseUrl: string;
   className?: string;
 }) {
   const [copied, setCopied] = useState(false);
 
   function handleCopy(e: React.MouseEvent) {
     e.preventDefault();
-    const url = shareUrl(partnerSlug);
+    const url = shareUrl(baseUrl, partnerSlug);
     navigator.clipboard.writeText(url).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 1500);
@@ -63,7 +64,7 @@ export default function ShareButtons({
   }
 
   function urlFor() {
-    return shareUrl(partnerSlug);
+    return shareUrl(baseUrl, partnerSlug);
   }
 
   return (

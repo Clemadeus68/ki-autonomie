@@ -3,7 +3,13 @@
 import { useState } from "react";
 import ShareButtons from "./ShareButtons";
 
-export default function ContactForm({ partnerSlug }: { partnerSlug: string | null }) {
+export default function ContactForm({
+  partnerSlug,
+  baseUrl,
+}: {
+  partnerSlug: string | null;
+  baseUrl: string;
+}) {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
@@ -47,7 +53,7 @@ export default function ContactForm({ partnerSlug }: { partnerSlug: string | nul
       <div className="lead-form-thanks">
         <p className="status">Danke, Ihre Nachricht ist angekommen. Ich melde mich zeitnah.</p>
         <p className="share-prompt">Kennen Sie noch jemanden, für den das interessant wäre?</p>
-        <ShareButtons partnerSlug={partnerSlug} />
+        <ShareButtons partnerSlug={partnerSlug} baseUrl={baseUrl} />
       </div>
     );
   }

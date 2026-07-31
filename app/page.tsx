@@ -34,6 +34,10 @@ export default async function Page({
   const partner = await resolvePartner(partnerSlug);
 
   const hdrs = await headers();
+  const proto = hdrs.get("x-forwarded-proto") ?? "https";
+  const host = hdrs.get("host") ?? "ki-autonomie.nice-network.de";
+  const baseUrl = `${proto}://${host}`;
+
   await prisma.klick.create({
     data: {
       partner_slug: partner?.slug ?? null,
@@ -206,7 +210,7 @@ export default async function Page({
 
       <section className="share-section block-dark">
         <p>Kennen Sie jemanden, für den das relevant wäre?</p>
-        <ShareButtons partnerSlug={partner?.slug ?? null} />
+        <ShareButtons partnerSlug={partner?.slug ?? null} baseUrl={baseUrl} />
       </section>
 
       <section className="cta-form-section" id="kontakt">
@@ -226,7 +230,7 @@ export default async function Page({
               </a>
             </div>
           </div>
-          <ContactForm partnerSlug={partner?.slug ?? null} />
+          <ContactForm partnerSlug={partner?.slug ?? null} baseUrl={baseUrl} />
         </div>
       </section>
 
@@ -239,7 +243,7 @@ export default async function Page({
             </a>
             <span>{content.footer.tagline}</span>
           </div>
-          <ShareButtons partnerSlug={partner?.slug ?? null} />
+          <ShareButtons partnerSlug={partner?.slug ?? null} baseUrl={baseUrl} />
         </div>
         <FooterBadges />
         <div className="footer-bottom">
