@@ -41,13 +41,13 @@ export const content = {
     sieItems: [
       "Ein **Vortrag**, der Ihre Phantasie in Gang bringt.",
       "Ein **Wettbewerber**, der zeigt, was schon geht.",
-      "Eine **Standardsoftware**, die an ihre Grenzen kommt — eine Ablösung kommt trotzdem nicht infrage.",
+      "Eine **Standardsoftware**, die an ihre Grenzen kommt - eine Ablösung kommt trotzdem nicht infrage.",
     ],
     ichLabel: "Meine Beobachtung",
     ichItems: [
       "Sie wissen nicht, wo Sie **anfangen** sollen.",
       "Sie fragen sich, wie sich das **managen** lässt, ohne dass die **Tokenkosten** explodieren.",
-      "Sie zögern, es **allen** freizuschalten — wegen **Kundenschutz** und **persönlichen Daten**.",
+      "Sie zögern, es **allen** freizuschalten - wegen **Kundenschutz** und **persönlichen Daten**.",
     ],
     close: "Genau an diesem Punkt steige ich ein.",
   },
@@ -65,7 +65,7 @@ export const content = {
     headingAccent: "KI",
     headingRest: "ist Führungssache, nicht IT-Projekt",
     paragraphs: [
-      "Ich berate strategisch und moderiere das Thema, wenn gewünscht, mit dem gesamten Unternehmen. KI ist eine Führungsaufgabe, keine IT-Beschaffung. Workshops, 1:1-Begleitung, Impulsvorträge, Gruppenarbeit — was zu Ihrem Unternehmen passt, setzen wir ein.",
+      "Ich berate strategisch und moderiere das Thema, wenn gewünscht, mit dem gesamten Unternehmen. KI ist eine Führungsaufgabe, keine IT-Beschaffung. Workshops, 1:1-Begleitung, Impulsvorträge, Gruppenarbeit - was zu Ihrem Unternehmen passt, setzen wir ein.",
       "Parallel dazu identifiziere ich zusammen mit Ihren Mitarbeitenden konkrete Anwendungsfälle. Die Menschen, die die Arbeit jeden Tag machen, wissen meist am genauesten, wo KI wirklich etwas verändert.",
     ],
   },

@@ -92,15 +92,15 @@ input, textarea { font-family: inherit; }
 .tag-ich { color: var(--green-dim); }
 
 .photo-list { list-style: none; margin: 0 0 30px; padding: 0; display: flex; flex-direction: column; gap: 14px; }
-.photo-list li { margin: 0; padding-left: 24px; position: relative; }
-.photo-list li::before { position: absolute; left: 0; font-weight: 700; }
+.photo-list li { margin: 0; padding-left: 22px; position: relative; }
+.photo-list li::before { position: absolute; left: 0; top: 0.05em; font-size: 1.2em; line-height: 1; }
 .photo-list li b { font-weight: 800; }
 
 .list-sie li { font-size: 18px; line-height: 1.5; color: var(--ink); font-weight: 500; }
-.list-sie li::before { content: "—"; color: var(--teal); }
+.list-sie li::before { content: "•"; color: var(--teal); }
 
 .list-ich li { font-size: 16px; line-height: 1.6; color: var(--body); }
-.list-ich li::before { content: "—"; color: var(--green); }
+.list-ich li::before { content: "•"; color: var(--green); }
 .list-ich li b { color: var(--ink); }
 
 .photo-close {

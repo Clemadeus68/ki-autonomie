@@ -27,7 +27,7 @@ export default async function AdminPage() {
 
   return (
     <div className="wrap-wide admin">
-      <h1>KI-Autonomie — Admin</h1>
+      <h1>KI-Autonomie - Admin</h1>
 
       <AdminPartners
         partners={partners.map((p) => ({
@@ -67,9 +67,9 @@ export default async function AdminPage() {
             {recentClicks.map((k) => (
               <tr key={k.id}>
                 <td>{fmt(k.created_at)}</td>
-                <td>{k.partner_slug ?? "—"}</td>
+                <td>{k.partner_slug ?? "-"}</td>
                 <td>{k.pfad}</td>
-                <td>{k.referrer ?? "—"}</td>
+                <td>{k.referrer ?? "-"}</td>
               </tr>
             ))}
             {recentClicks.length === 0 && (

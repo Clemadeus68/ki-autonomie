@@ -68,15 +68,15 @@ export default function AdminLeads({ leads }: { leads: Lead[] }) {
         <tbody>
           {leads.map((l) => (
             <tr key={l.id} className={l.erledigt ? "admin-done" : undefined}>
-              <td>{l.partner_slug ?? "—"}</td>
-              <td>{l.partner?.name ?? "—"}</td>
+              <td>{l.partner_slug ?? "-"}</td>
+              <td>{l.partner?.name ?? "-"}</td>
               <td>{fmt(l.created_at)}</td>
-              <td>{l.nachricht ?? "—"}</td>
+              <td>{l.nachricht ?? "-"}</td>
               <td>
                 <a href={`mailto:${l.email}`}>{l.email}</a>
               </td>
               <td>{l.name}</td>
-              <td>{l.telefon ?? "—"}</td>
+              <td>{l.telefon ?? "-"}</td>
               <td>
                 <input
                   type="checkbox"
