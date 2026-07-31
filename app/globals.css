@@ -141,7 +141,7 @@ input, textarea { font-family: inherit; }
 .bio-section .subheading {
   font-size: 22px; font-weight: 700; color: var(--ink); margin: 64px 0 32px;
 }
-.bio-section .clients-sub { font-size: 14px; color: var(--placeholder); margin: 0 0 24px; }
+.bio-section .clients-sub { font-size: 14px; font-weight: 700; color: var(--ink); margin: 64px 0 24px; }
 
 .testimonial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .testimonial-card { background: var(--card-bg); padding: 40px; text-align: center; }

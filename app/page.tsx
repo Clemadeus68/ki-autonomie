@@ -193,9 +193,6 @@ export default async function Page({
             ))}
           </div>
 
-          <h3 className="subheading" style={{ marginBottom: 8 }}>
-            {content.clients.heading}
-          </h3>
           <p className="clients-sub">{content.clients.sub}</p>
           <div className="logo-grid">
             {content.clients.logos.map((logo) => (

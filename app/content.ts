@@ -130,7 +130,6 @@ export const content = {
   },
 
   clients: {
-    heading: "Unsere Kunden",
     sub: "Auszug aus unserer Kundenliste",
     logos: [
       { src: "/assets/logo-baufritz.png", alt: "Baufritz", url: "https://www.baufritz.com/de", height: 40 },
