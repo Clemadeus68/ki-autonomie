@@ -4,6 +4,7 @@ import { headers } from "next/headers";
 import { prisma } from "@/lib/prisma";
 import ContactForm from "./ContactForm";
 import FooterBadges from "./Lightbox";
+import ShareButtons from "./ShareButtons";
 import { content } from "./content";
 import { Boldify } from "@/lib/text";
 
@@ -203,6 +204,11 @@ export default async function Page({
         </div>
       </section>
 
+      <section className="share-section block-dark">
+        <p>Kennen Sie jemanden, für den das relevant wäre?</p>
+        <ShareButtons partnerSlug={partner?.slug ?? null} />
+      </section>
+
       <section className="cta-form-section" id="kontakt">
         <div className="cta-form-grid">
           <div>
@@ -233,6 +239,7 @@ export default async function Page({
             </a>
             <span>{content.footer.tagline}</span>
           </div>
+          <ShareButtons partnerSlug={partner?.slug ?? null} />
         </div>
         <FooterBadges />
         <div className="footer-bottom">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ShareButtons from "./ShareButtons";
 
 export default function ContactForm({ partnerSlug }: { partnerSlug: string | null }) {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -42,7 +43,13 @@ export default function ContactForm({ partnerSlug }: { partnerSlug: string | nul
   }
 
   if (status === "sent") {
-    return <p className="status">Danke, Ihre Nachricht ist angekommen. Ich melde mich zeitnah.</p>;
+    return (
+      <div className="lead-form-thanks">
+        <p className="status">Danke, Ihre Nachricht ist angekommen. Ich melde mich zeitnah.</p>
+        <p className="share-prompt">Kennen Sie noch jemanden, für den das interessant wäre?</p>
+        <ShareButtons partnerSlug={partnerSlug} />
+      </div>
+    );
   }
 
   return (
