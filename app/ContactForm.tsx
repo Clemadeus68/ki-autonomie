@@ -64,7 +64,10 @@ export default function ContactForm({ partnerSlug }: { partnerSlug: string | nul
         <input type="checkbox" name="einwilligung" />
         <span>
           Ich stimme der Speicherung und Verarbeitung meiner eingegebenen Daten gemäß der{" "}
-          <a href="/datenschutz">Datenschutzerklärung</a> zur Beantwortung meiner Anfrage zu.
+          <a href="/datenschutz" target="_blank" rel="noopener">
+            Datenschutzerklärung
+          </a>{" "}
+          zur Beantwortung meiner Anfrage zu.
         </span>
       </label>
       <button type="submit" disabled={status === "sending"}>
