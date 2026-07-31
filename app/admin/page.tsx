@@ -9,7 +9,7 @@ function fmt(d: Date) {
 }
 
 export default async function AdminPage() {
-  const [partners, leads, recentClicks] = await Promise.all([
+  const [partners, leads, recentClicks, bookings] = await Promise.all([
     prisma.partner.findMany({
       include: { _count: { select: { klicks: true, leads: true } } },
       orderBy: { created_at: "desc" },
@@ -20,6 +20,11 @@ export default async function AdminPage() {
       take: 100,
     }),
     prisma.klick.findMany({
+      orderBy: { created_at: "desc" },
+      take: 20,
+    }),
+    prisma.booking.findMany({
+      include: { partner: true },
       orderBy: { created_at: "desc" },
       take: 20,
     }),
@@ -52,6 +57,48 @@ export default async function AdminPage() {
           partner: l.partner ? { name: l.partner.name } : null,
         }))}
       />
+
+      <section>
+        <h2>Cal.com-Buchungen (Test/Debug, letzte 20)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>PID</th>
+              <th>Name</th>
+              <th>E-Mail</th>
+              <th>Event</th>
+              <th>Termin</th>
+              <th>Trigger</th>
+              <th>Rohdaten</th>
+            </tr>
+          </thead>
+          <tbody>
+            {bookings.map((b) => (
+              <tr key={b.id}>
+                <td>{fmt(b.created_at)}</td>
+                <td>{b.partner_slug ?? "-"}</td>
+                <td>{b.name ?? "-"}</td>
+                <td>{b.email ?? "-"}</td>
+                <td>{b.event_type ?? "-"}</td>
+                <td>{b.start_time ? fmt(b.start_time) : "-"}</td>
+                <td>{b.trigger_event ?? "-"}</td>
+                <td>
+                  <details>
+                    <summary>anzeigen</summary>
+                    <pre className="admin-raw">{JSON.stringify(b.raw_payload, null, 2)}</pre>
+                  </details>
+                </td>
+              </tr>
+            ))}
+            {bookings.length === 0 && (
+              <tr>
+                <td colSpan={8}>Noch keine Buchungen über den Webhook eingegangen.</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </section>
 
       <section>
         <h2>Letzte 20 Klicks</h2>

@@ -12,8 +12,9 @@ model Partner {
   notiz      String?
   created_at DateTime @default(now())
 
-  klicks Klick[]
-  leads  Lead[]
+  klicks   Klick[]
+  leads    Lead[]
+  bookings Booking[]
 }
 
 model Klick {
@@ -22,6 +23,20 @@ model Klick {
   pfad          String
   referrer      String?
   user_agent    String?
+  created_at    DateTime @default(now())
+
+  partner Partner? @relation(fields: [partner_slug], references: [slug])
+}
+
+model Booking {
+  id            Int      @id @default(autoincrement())
+  name          String?
+  email         String?
+  event_type    String?
+  start_time    DateTime?
+  partner_slug  String?
+  trigger_event String?
+  raw_payload   Json?
   created_at    DateTime @default(now())
 
   partner Partner? @relation(fields: [partner_slug], references: [slug])
