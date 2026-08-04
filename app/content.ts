@@ -25,11 +25,11 @@ export const content = {
   },
 
   hero: {
-    eyebrow: "KI-MANAGEMENT FÜR KMU UND MITTELSTAND",
+    eyebrow: "KI-EINFÜHRUNG FÜR KMU UND MITTELSTAND",
     // Bindestrich in "Lock‑in" ist absichtlich ein spezielles Zeichen (kein
     // normales "-"), damit der Zeilenumbruch nie direkt nach "Lock-" landet.
     // Beim Bearbeiten diesen Bindestrich nicht mit der Tastatur neu tippen.
-    titleLine1: "KI managen ohne Festlegung auf Modelle oder Lock‑in-Effekte. Mit voller Kostenkontrolle und jederzeitigem Modellwechsel.",
+    titleLine1: "KI einführen ohne Festlegung auf Modelle oder Lock‑in-Effekte. Mit voller Kostenkontrolle und jederzeitigem Modellwechsel.",
     titleAccent: "100% compliant.",
     sub: "Ob Sie noch ganz am Anfang stehen oder längst wissen, wo KI ansetzen soll: Ich sorge dafür, dass Ihr Unternehmen dabei die Kontrolle behält. Über Kosten, über Daten, über die Entscheidungen selbst.",
     ctaLabel: "Unverbindliches Erstgespräch buchen →",
@@ -76,7 +76,7 @@ export const content = {
   benefits: {
     headingAccent: "Was",
     headingRest: "die Zusammenarbeit mit mir sicherstellt",
-    lead: "Das Management läuft technisch auf einer Multi-LLM-Plattform statt an einen einzelnen Anbieter gebunden zu sein.",
+    lead: "Die Einführung läuft technisch auf einer Multi-LLM-Plattform statt an einen einzelnen Anbieter gebunden zu sein.",
     rows: [
       {
         title: "Volle Kostenkontrolle",
