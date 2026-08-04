@@ -79,6 +79,10 @@ export default async function Page({
               {content.hero.ctaLabel}
             </a>
             <span className="cta-meta">{content.hero.ctaMeta}</span>
+            <a className="btn btn-secondary" href={content.hero.ctaUrl2}>
+              {content.hero.ctaLabel2}
+            </a>
+            <span className="cta-meta">{content.hero.ctaMeta2}</span>
           </div>
         </div>
       </section>

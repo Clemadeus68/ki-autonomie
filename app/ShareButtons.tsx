@@ -6,7 +6,7 @@ function shareUrl(baseUrl: string, partnerSlug: string | null): string {
   return partnerSlug ? `${baseUrl}/?ref=${partnerSlug}` : `${baseUrl}/`;
 }
 
-const SHARE_TEXT = "KI-Autonomie – KI-Einführung für den Mittelstand, ohne Lock-in-Effekte:";
+const SHARE_TEXT = "KI-Autonomie – KI-Management für den Mittelstand, ohne Lock-in-Effekte:";
 
 function WhatsAppIcon() {
   return (
