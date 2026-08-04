@@ -75,11 +75,11 @@ export default async function Page({
         <div className="hero-sub-grid">
           <p>{content.hero.sub}</p>
           <div className="cta-stack">
-            <a className="btn" href="#kontakt">
+            <a className="btn" href="#kontakt" target="_blank" rel="noopener">
               {content.hero.ctaLabel}
             </a>
             <span className="cta-meta">{content.hero.ctaMeta}</span>
-            <a className="btn btn-secondary" href={content.hero.ctaUrl2}>
+            <a className="btn btn-secondary" href={content.hero.ctaUrl2} target="_blank" rel="noopener">
               {content.hero.ctaLabel2}
             </a>
             <span className="cta-meta">{content.hero.ctaMeta2}</span>
