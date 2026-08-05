@@ -75,6 +75,21 @@ export default function AdminPartners({ partners }: { partners: Partner[] }) {
     }
   }
 
+  async function remove(slug: string) {
+    if (!confirm(`Partner "${slug}" unwiderruflich löschen? Klicks/Leads/Buchungen bleiben erhalten, verlieren aber die PID-Zuordnung.`)) return;
+    setError("");
+    setBusy(slug);
+    try {
+      const res = await fetch(`/admin/partners/${slug}`, { method: "DELETE" });
+      if (!res.ok) throw new Error((await res.json()).error || "Fehler");
+      router.refresh();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Fehler");
+    } finally {
+      setBusy(null);
+    }
+  }
+
   return (
     <section>
       <h2>Partner</h2>
@@ -108,6 +123,7 @@ export default function AdminPartners({ partners }: { partners: Partner[] }) {
             <th>Seit</th>
             <th>Link</th>
             <th></th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -136,11 +152,16 @@ export default function AdminPartners({ partners }: { partners: Partner[] }) {
                   {busy === p.slug ? "…" : "Speichern"}
                 </button>
               </td>
+              <td>
+                <button onClick={() => remove(p.slug)} disabled={busy === p.slug}>
+                  Löschen
+                </button>
+              </td>
             </tr>
           ))}
           {partners.length === 0 && (
             <tr>
-              <td colSpan={7}>Noch keine Partner-Aufrufe.</td>
+              <td colSpan={8}>Noch keine Partner-Aufrufe.</td>
             </tr>
           )}
         </tbody>

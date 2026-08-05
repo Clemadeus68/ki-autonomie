@@ -35,6 +35,35 @@ export default async function AdminPage() {
     <div className="wrap-wide admin">
       <h1>KI-Autonomie - Admin</h1>
 
+      <section>
+        <h2>Letzte 20 Klicks</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Partner</th>
+              <th>Pfad</th>
+              <th>Referrer</th>
+            </tr>
+          </thead>
+          <tbody>
+            {recentClicks.map((k) => (
+              <tr key={k.id}>
+                <td>{fmt(k.created_at)}</td>
+                <td>{k.partner_slug ?? "-"}</td>
+                <td>{k.pfad}</td>
+                <td>{k.referrer ?? "-"}</td>
+              </tr>
+            ))}
+            {recentClicks.length === 0 && (
+              <tr>
+                <td colSpan={4}>Noch keine Klicks.</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </section>
+
       <AdminPartners
         partners={partners.map((p) => ({
           slug: p.slug,
@@ -72,35 +101,6 @@ export default async function AdminPage() {
           created_at: b.created_at.toISOString(),
         }))}
       />
-
-      <section>
-        <h2>Letzte 20 Klicks</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Datum</th>
-              <th>Partner</th>
-              <th>Pfad</th>
-              <th>Referrer</th>
-            </tr>
-          </thead>
-          <tbody>
-            {recentClicks.map((k) => (
-              <tr key={k.id}>
-                <td>{fmt(k.created_at)}</td>
-                <td>{k.partner_slug ?? "-"}</td>
-                <td>{k.pfad}</td>
-                <td>{k.referrer ?? "-"}</td>
-              </tr>
-            ))}
-            {recentClicks.length === 0 && (
-              <tr>
-                <td colSpan={4}>Noch keine Klicks.</td>
-              </tr>
-            )}
-          </tbody>
-        </table>
-      </section>
     </div>
   );
 }
