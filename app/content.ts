@@ -16,6 +16,7 @@
 
 export const content = {
   nav: {
+    byline: "Clemens Gutmann | be nice Managementberatung",
     eyebrow: "KI-AUTONOMIE",
   },
 
@@ -40,6 +41,7 @@ export const content = {
   },
 
   photoSection: {
+    photoCredit: "Clemens Gutmann 2026",
     sieLabel: "Ihre Situation",
     sieItems: [
       "Ein **Vortrag**, der Ihre Phantasie in Gang bringt.",

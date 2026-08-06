@@ -50,9 +50,8 @@ export default async function Page({
   return (
     <>
       <header className="site-header pad-64">
-        <a href="/">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/assets/logo.png" alt="be nice" />
+        <a href="/" className="header-byline">
+          {content.nav.byline}
         </a>
         <span className="eyebrow-nav">{content.nav.eyebrow}</span>
       </header>
@@ -88,8 +87,11 @@ export default async function Page({
       </section>
 
       <section className="split-photo">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/assets/clemens.png" alt="Clemens Gutmann" />
+        <div className="photo-frame">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/assets/clemens.png" alt="Clemens Gutmann" />
+          <span className="photo-credit">{content.photoSection.photoCredit}</span>
+        </div>
         <div className="text">
           <span className="photo-tag tag-sie">{content.photoSection.sieLabel}</span>
           <ul className="photo-list list-sie">
