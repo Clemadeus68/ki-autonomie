@@ -36,10 +36,14 @@ input, textarea { font-family: inherit; }
 
 /* Header */
 .site-header {
-  height: 112px;
+  min-height: 112px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 8px 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background: var(--ink);
 }
 .header-byline {
@@ -222,6 +226,7 @@ footer { background: var(--ink); }
 .lightbox-overlay img { max-width: 85vw; max-height: 85vh; border-radius: 8px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4); }
 
 @media (max-width: 900px) {
+  .header-byline, .eyebrow-nav { font-size: 22px !important; }
   .hero-title { font-size: 48px !important; letter-spacing: -1px !important; }
   .hero-sub-grid { grid-template-columns: 1fr !important; }
   .split-photo, .cta-form-grid { grid-template-columns: 1fr !important; }
