@@ -108,10 +108,15 @@ export const content = {
     headingAccent: "Warum",
     headingRest: "das ausgerechnet ich mache",
     paragraphs: [
-      "Ich bin Volljurist und Managementberater mit fast drei Jahrzehnten Praxis in Management, Beratung und Unternehmertum. Ich habe mehrfach gegründet, Unternehmen und Agenturen geleitet, Mittelstandsunternehmen in entscheidenden Phasen begleitet und als Anwalt, Berater und Aufsichtsrat unterstützt. Meine Haltung zu KI ist nicht die eines Technikers. KI ist ein organisatorisches, menschliches Führungsthema und eines der Compliance und Datensicherheit. Für die Technik arbeite ich nahtlos mit Spezialisten aus meinem Netzwerk. Außerdem setze ich konsequent auf Multi-LLM-Plattformen mit Eigentümerschaft, Sitz und Hosting in Deutschland, die ich sorgfältig kuratiere und die ein ergänzendes hervorragendes Serviceangebot haben",
-      "Weitere Informationen zu mir finden Sie auf www.nice-network.de.",
-      "Mein Bekenntnis zu einer KI-Nutzung, die Rücksicht auf uns Menschen nimmt, war der Auslöser dafür, dass ich das Human-First AI Manifesto mitinitiiert habe.",
+      "Ich bin Volljurist und Managementberater mit fast drei Jahrzehnten Praxis in Management, Beratung und Unternehmertum. Ich habe mehrfach gegründet, Unternehmen und Agenturen geleitet sowie Aufbauphasen bei Mittelstandsunternehmen und größeren Startups verantwortlich mitgestaltet. Meine Beratungsschwerpunkte sind Leadership, Marken- und Markenführungsberatung sowie Strategieberatung, insbesondere in den Bereichen Sales und Marketing, B2B, D2C und B2C.",
+      "Das Thema KI-Einführung ist ein so wichtiges Thema heute, dass es sinnvoller Weise initial gelöst werden sollte, weil alle Prozessverbesserungen damit zu tun haben.",
+      "Für mich ist KI ein organisatorisches, menschliches Führungsthema und eines der Compliance und Datensicherheit. Für das, was dann technisch wird, etwa eventuell nötige Schnittstellen zu bestehenden Systemen, arbeite ich bei Bedarf nahtlos mit Spezialisten aus meinem Netzwerk. Außerdem setze ich konsequent auf Multi-LLM-Plattformen mit Eigentümerschaft, Sitz und Hosting in Deutschland, die ich sorgfältig kuratiere. Schließlich biete ich natürlich auch Services wie Implementierung, Schulung und Trainings oder Prompting School an.",
+      "Besonders interessant kann hier für größere Unternehmen sein, dass Schulungs- und Weiterbildungsmaßnahmen nach dem Qualifizierungschancengesetz (QCG) gefördert werden können und zwar zu 100% des Gehaltes der Mitarbeiterinnen und Mitarbeiter, die an den Weiterbildungsmaßnahmen teilnehmen. Ich habe hierfür tolle Partnerakademien und wir setzen das gerne für Sie um.",
+      "Aber auch meine eigenen Leistungen als Berater und Begleiter für Ihre Transformationsprojekte, grade auch für mehrmonatige Implementierungen von neuen Prozessen und Technologien, sind mit bis zu 80% staatlich gefördert. Bitte schicken Sie mir eine kurze Nachricht und wir sprechen über all Ihre Fragen.",
     ],
+    moreInfoUrl: "https://www.nice-network.de",
+    manifestoText:
+      "Mein Bekenntnis zu einer KI-Nutzung, die Rücksicht auf uns Menschen nimmt, war der Auslöser dafür, dass ich das Human-First AI Manifesto mitinitiiert habe.",
     manifestoBadge: "/assets/badge-humanfirst-ai.png",
     manifestoUrl: "https://www.humanfirstaimanifesto.com/",
   },

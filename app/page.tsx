@@ -178,6 +178,14 @@ export default async function Page({
                 {p}
               </p>
             ))}
+            <p className="copy">
+              Weitere Informationen zu mir finden Sie auf{" "}
+              <a href={content.bio.moreInfoUrl} target="_blank" rel="noopener">
+                www.nice-network.de
+              </a>
+              .
+            </p>
+            <p className="copy">{content.bio.manifestoText}</p>
             <div className="manifesto-badge">
               <a href={content.bio.manifestoUrl} target="_blank" rel="noopener">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
