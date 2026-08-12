@@ -108,12 +108,10 @@ input, textarea { font-family: inherit; }
 .photo-list li::before { position: absolute; left: 0; top: 0.05em; font-size: 1.2em; line-height: 1; }
 .photo-list li b { font-weight: 800; }
 
-.list-sie li { font-size: 18px; line-height: 1.5; color: var(--ink); font-weight: 500; }
+.list-sie li, .list-ich li { font-size: 17px; line-height: 1.7; color: var(--body); font-weight: 400; }
 .list-sie li::before { content: "•"; color: var(--teal); }
-
-.list-ich li { font-size: 16px; line-height: 1.6; color: var(--body); }
 .list-ich li::before { content: "•"; color: var(--green); }
-.list-ich li b { color: var(--ink); }
+.list-sie li b, .list-ich li b { color: var(--ink); }
 
 .photo-close {
   font-size: 17px; font-weight: 700; color: var(--ink); margin: 6px 0 0;

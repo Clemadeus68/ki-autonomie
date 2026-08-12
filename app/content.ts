@@ -26,13 +26,13 @@ export const content = {
   },
 
   hero: {
-    eyebrow: "KI-EINFÜHRUNG FÜR KMU UND MITTELSTAND",
-    // Bindestrich in "Lock‑in" ist absichtlich ein spezielles Zeichen (kein
-    // normales "-"), damit der Zeilenumbruch nie direkt nach "Lock-" landet.
-    // Beim Bearbeiten diesen Bindestrich nicht mit der Tastatur neu tippen.
-    titleLine1: "KI einführen ohne Festlegung auf Modelle oder Lock‑in-Effekte. Mit voller Kostenkontrolle und jederzeitigem Modellwechsel.",
-    titleAccent: "100% compliant.",
-    sub: "Ob Sie noch ganz am Anfang stehen oder längst wissen, wo KI ansetzen soll: Ich sorge dafür, dass Ihr Unternehmen dabei die Kontrolle behält. Über Kosten, über Daten, über die Entscheidungen selbst.",
+    eyebrow: "IHR KI-STRATEGIEBERATER FÜR DEN MITTELSTAND",
+    // "jedem Arbeitsplatz" wird in page.tsx aus diesem Satz herausgetrennt und
+    // grün eingefärbt (ersetzt die frühere separate titleAccent-Zeile). Wird
+    // der Wortlaut dieser Stelle geändert, muss der exakt gleiche Text auch
+    // in page.tsx angepasst werden, sonst greift die Einfärbung nicht mehr.
+    titleLine1: "Endlich KI einführen - mit voller Kontrolle an jedem Arbeitsplatz.",
+    sub: "Als Ihr KI-Strategieberater berate ich Ihre Geschäftsführung, nehme Ihre Mitarbeitenden mit und sorge als Volljurist für DSGVO- und AI-Act-konforme Kontrolle über Kosten und Sicherheit an jedem Arbeitsplatz.",
     ctaLabel: "Unverbindliches Erstgespräch buchen →",
     ctaMeta: "30 Minuten, ohne Verkaufsdruck",
     ctaLabel2: "in 3 Minuten Ihre KI-Readiness messen →",
@@ -50,9 +50,10 @@ export const content = {
     ],
     ichLabel: "Meine Beobachtung",
     ichItems: [
-      "Sie wissen nicht, wo Sie **anfangen** sollen.",
-      "Sie fragen sich, wie sich das **managen** lässt, ohne dass die **Tokenkosten** explodieren.",
-      "Sie zögern, es **allen** freizuschalten - wegen **Kundenschutz** und **persönlichen Daten**.",
+      "Sie wissen nicht, wo Sie **anfangen** sollen - Zeit dafür ist ohnehin knapp.",
+      "Sie wollen nicht einfach **jedem** Zugang geben, aus Sorge, dass die **Tokenkosten** explodieren.",
+      "**DSGVO** und **AI-Act** wirken wie ein Fass ohne Boden - einen extra Anwalt wollen Sie dafür nicht bezahlen.",
+      "Nicht jede und jeder im Team ist gleich technikaffin - Sie wissen nicht, wer die Einführung wirklich mitgehen kann.",
     ],
     close: "Genau an diesem Punkt steige ich ein.",
   },
@@ -101,6 +102,11 @@ export const content = {
         text: "Beratungs- und Umsetzungsprojekte werden gefördert. Wir kümmern uns um die Formalitäten und prüfen die Voraussetzungen für Sie. Kostenfrei!",
         highlight: true,
       },
+      {
+        title: "Weiterbildung 100% gefördert",
+        text: "Schulungs- und Weiterbildungsmaßnahmen nach dem Qualifizierungschancengesetz (QCG) - zu 100% des Gehalts der teilnehmenden Mitarbeitenden, über meine Partnerakademien.",
+        highlight: true,
+      },
     ],
   },
 
@@ -108,11 +114,9 @@ export const content = {
     headingAccent: "Warum",
     headingRest: "das ausgerechnet ich mache",
     paragraphs: [
-      "Ich bin Volljurist und Managementberater mit fast drei Jahrzehnten Praxis in Management, Beratung und Unternehmertum. Ich habe mehrfach gegründet, Unternehmen und Agenturen geleitet sowie Aufbauphasen bei Mittelstandsunternehmen und größeren Startups verantwortlich mitgestaltet. Meine Beratungsschwerpunkte sind Leadership, Marken- und Markenführungsberatung sowie Strategieberatung, insbesondere in den Bereichen Sales und Marketing, B2B, D2C und B2C.",
-      "Das Thema KI-Einführung ist ein so wichtiges Thema heute, dass es sinnvoller Weise initial gelöst werden sollte, weil alle Prozessverbesserungen damit zu tun haben.",
-      "Für mich ist KI ein organisatorisches, menschliches Führungsthema und eines der Compliance und Datensicherheit. Für das, was dann technisch wird, etwa eventuell nötige Schnittstellen zu bestehenden Systemen, arbeite ich bei Bedarf nahtlos mit Spezialisten aus meinem Netzwerk. Außerdem setze ich konsequent auf Multi-LLM-Plattformen mit Eigentümerschaft, Sitz und Hosting in Deutschland, die ich sorgfältig kuratiere. Schließlich biete ich natürlich auch Services wie Implementierung, Schulung und Trainings oder Prompting School an.",
-      "Besonders interessant kann hier für größere Unternehmen sein, dass Schulungs- und Weiterbildungsmaßnahmen nach dem Qualifizierungschancengesetz (QCG) gefördert werden können und zwar zu 100% des Gehaltes der Mitarbeiterinnen und Mitarbeiter, die an den Weiterbildungsmaßnahmen teilnehmen. Ich habe hierfür tolle Partnerakademien und wir setzen das gerne für Sie um.",
-      "Aber auch meine eigenen Leistungen als Berater und Begleiter für Ihre Transformationsprojekte, grade auch für mehrmonatige Implementierungen von neuen Prozessen und Technologien, sind mit bis zu 80% staatlich gefördert. Bitte schicken Sie mir eine kurze Nachricht und wir sprechen über all Ihre Fragen.",
+      "Ich bin Volljurist und Managementberater mit fast drei Jahrzehnten Praxis in Management, Beratung und Unternehmertum - mehrfach gegründet, Unternehmen und Agenturen geleitet, Aufbauphasen bei Mittelstandsunternehmen und Startups mitgestaltet.",
+      "KI ist für mich kein IT-Thema, sondern ein Führungs-, Compliance- und Datensicherheitsthema - deshalb sollte es meist als Erstes angegangen werden, weil alle anderen Prozessverbesserungen davon abhängen. Technisch arbeite ich bei Bedarf mit Spezialisten aus meinem Netzwerk und setze konsequent auf kuratierte Multi-LLM-Plattformen mit Sitz und Hosting in Deutschland.",
+      "Von der Strategie bis zur Umsetzung: Implementierung, Schulung, Prompting School - inklusive staatlicher Förderung von bis zu 80% für Transformationsprojekte. Schreiben Sie mir kurz, wir klären alles Weitere im Gespräch.",
     ],
     moreInfoUrl: "https://www.nice-network.de",
     manifestoText:

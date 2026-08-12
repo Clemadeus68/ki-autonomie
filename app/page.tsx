@@ -69,7 +69,17 @@ export default async function Page({
       <section className="hero pad-64">
         <span className="eyebrow">{content.hero.eyebrow}</span>
         <h1 className="hero-title">
-          {content.hero.titleLine1} <span className="accent">{content.hero.titleAccent}</span>
+          {(() => {
+            const accent = "jedem Arbeitsplatz";
+            const [before, after] = content.hero.titleLine1.split(accent);
+            return (
+              <>
+                {before}
+                <span className="accent">{accent}</span>
+                {after}
+              </>
+            );
+          })()}
         </h1>
         <div className="hero-sub-grid">
           <p>{content.hero.sub}</p>
