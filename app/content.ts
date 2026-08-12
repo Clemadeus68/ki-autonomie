@@ -91,7 +91,7 @@ export const content = {
       },
       {
         title: "Umsetzung mit Partnernetzwerk",
-        text: "Workflow- und Prozessdesign inklusive Schnittstellen, bis hin zur Prompting School.",
+        text: "Anbindungen von bestehenden Systemen und Tools mittels Schnittstellen, komplexe Automatisierungen.",
       },
       {
         title: "Für besonders sensible Fälle",
