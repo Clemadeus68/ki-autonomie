@@ -128,15 +128,24 @@ export default async function Page({
       <section className="block block-dark">
         <div className="wrap-1200">
           <h2>
-            <span style={{ color: "var(--green)" }}>{content.whereYouStand.headingAccent}</span>{" "}
-            {content.whereYouStand.headingRest}
+            <span style={{ color: "var(--teal)" }}>{content.leadership.headingAccent}</span>{" "}
+            {content.leadership.headingRest}
           </h2>
           <div>
-            {content.whereYouStand.paragraphs.map((p, i) => (
+            {content.leadership.paragraphs.map((p, i) => (
               <p className="copy" key={i}>
                 {p}
               </p>
             ))}
+            <a
+              className="btn btn-berry"
+              href={content.contact.calendlyUrl}
+              target="_blank"
+              rel="noopener"
+              style={{ marginTop: 12, display: "inline-block" }}
+            >
+              {content.leadership.ctaLabel}
+            </a>
           </div>
         </div>
       </section>
@@ -144,11 +153,11 @@ export default async function Page({
       <section className="block block-light">
         <div className="wrap-1200">
           <h2>
-            <span style={{ color: "var(--teal)" }}>{content.leadership.headingAccent}</span>{" "}
-            {content.leadership.headingRest}
+            <span style={{ color: "var(--green)" }}>{content.whereYouStand.headingAccent}</span>{" "}
+            {content.whereYouStand.headingRest}
           </h2>
           <div>
-            {content.leadership.paragraphs.map((p, i) => (
+            {content.whereYouStand.paragraphs.map((p, i) => (
               <p className="copy" key={i}>
                 {p}
               </p>
@@ -188,6 +197,15 @@ export default async function Page({
                 {p}
               </p>
             ))}
+            <a
+              className="btn btn-berry"
+              href={content.contact.calendlyUrl}
+              target="_blank"
+              rel="noopener"
+              style={{ marginTop: 12, marginBottom: 12, display: "inline-block" }}
+            >
+              {content.leadership.ctaLabel}
+            </a>
             <p className="copy">
               Weitere Informationen zu mir finden Sie auf{" "}
               <a href={content.bio.moreInfoUrl} target="_blank" rel="noopener">
@@ -241,14 +259,15 @@ export default async function Page({
             <div className="intro-text">
               <p>{content.contact.intro}</p>
             </div>
-            <a className="btn" href={content.contact.calendlyUrl} target="_blank" rel="noopener">
+            <a className="btn btn-berry" href={content.contact.calendlyUrl} target="_blank" rel="noopener">
               {content.contact.calendlyLabel}
             </a>
             <div className="contact-line">
               Oder direkt: <a href={content.contact.phoneHref}>{content.contact.phoneLabel}</a> ·{" "}
               <a href={content.contact.linkedinUrl} target="_blank" rel="noopener">
-                LinkedIn
-              </a>
+                Clemens auf LinkedIn
+              </a>{" "}
+              · <a href={content.contact.emailHref}>{content.contact.emailLabel}</a>
             </div>
           </div>
           <ContactForm partnerSlug={partner?.slug ?? null} baseUrl={baseUrl} />

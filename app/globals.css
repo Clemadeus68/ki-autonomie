@@ -85,6 +85,7 @@ input, textarea { font-family: inherit; }
 }
 .btn:disabled { opacity: 0.6; cursor: default; }
 .btn-secondary { background: var(--green); color: var(--ink); }
+.btn-berry { background: #A64D79; color: #fff; }
 
 /* Photo split */
 .split-photo { display: grid; grid-template-columns: 0.9fr 1.1fr; }
@@ -169,8 +170,8 @@ input, textarea { font-family: inherit; }
 .cta-form-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
 .cta-form-grid h2 { font-size: 40px; font-weight: 900; color: var(--ink); margin: 0 0 20px; letter-spacing: -1px; }
 .cta-form-grid .intro-text p { font-size: 17px; line-height: 1.6; color: var(--ink); margin: 0 0 32px; }
-.contact-line { font-size: 14px; color: #3d3b1f; margin-top: 20px; }
-.contact-line a { color: #3d3b1f; text-decoration: underline; }
+.contact-line { font-size: 17px; line-height: 1.6; color: var(--ink); margin-top: 20px; }
+.contact-line a { color: var(--ink); text-decoration: underline; }
 
 .lead-form { display: flex; flex-direction: column; gap: 12px; }
 .lead-form input, .lead-form textarea {

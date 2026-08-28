@@ -69,11 +69,13 @@ export const content = {
 
   leadership: {
     headingAccent: "KI",
-    headingRest: "ist Führungssache, nicht IT-Projekt",
+    headingRest: "managen, bevor sie Sie managt",
     paragraphs: [
-      "Ich berate strategisch und moderiere das Thema, wenn gewünscht, mit dem gesamten Unternehmen. KI ist eine Führungsaufgabe, keine IT-Beschaffung. Workshops, 1:1-Begleitung, Impulsvorträge, Gruppenarbeit - was zu Ihrem Unternehmen passt, setzen wir ein.",
-      "Parallel dazu identifiziere ich zusammen mit Ihren Mitarbeitenden konkrete Anwendungsfälle. Die Menschen, die die Arbeit jeden Tag machen, wissen meist am genauesten, wo KI wirklich etwas verändert.",
+      "Alle reden über Agentic Workflows und Metaprompts. Und übersehen dabei das Naheliegende: KI muss gemanagt werden, so nüchtern wie jedes andere Unternehmenssystem auch.",
+      "Ich vermittle Ihnen dafür ein einsatzbereites, sehr gut referenziertes System, mit dem Sie alle relevanten KI-Modelle zu den Kosten eines einzigen Modell-Abos nutzen, testbar in einem 28-tägigen Trial, der auch die Nutzungskosten der Modelle selbst einschließt. Eine vorgelagerte automatische Pseudonymisierung sorgt fast auf Knopfdruck für DSGVO-Sicherheit und schützt Sie vor Haftungsrisiken. Ein eigenes Tool wickelt die Pflichtschulung nach Art. 4 AI-Act automatisiert für Sie ab.",
+      "Meistens beginnt das erste Gespräch aber ganz woanders: bei Prozessen und Workflows, die nicht mehr rundlaufen. Genau das ist oft der eigentliche Grund, warum KI im Unternehmen zum strategischen Thema wird. Ich schaue mir diese Prozesse an, finde die Potenziale und entwickle mit Ihnen einen Leitfaden, wie Sie innerhalb Ihrer bestehenden Systeme mit minimalem Aufwand mehr Leistung und mehr Komfort herausholen, auch im Umgang mit Ihren Daten.",
     ],
+    ctaLabel: "Einfach Kontakt aufnehmen und 28 Tage kostenfrei testen, inklusive Modellkosten →",
   },
 
   benefits: {
@@ -114,9 +116,8 @@ export const content = {
     headingAccent: "Warum",
     headingRest: "das ausgerechnet ich mache",
     paragraphs: [
-      "Ich bin Volljurist und Managementberater mit fast drei Jahrzehnten Praxis in Management, Beratung und Unternehmertum - mehrfach gegründet, Unternehmen und Agenturen geleitet, Aufbauphasen bei Mittelstandsunternehmen und Startups mitgestaltet.",
-      "KI ist für mich kein IT-Thema, sondern ein Führungs-, Compliance- und Datensicherheitsthema - deshalb sollte es meist als Erstes angegangen werden, weil alle anderen Prozessverbesserungen davon abhängen. Technisch arbeite ich bei Bedarf mit Spezialisten aus meinem Netzwerk und setze konsequent auf kuratierte Multi-LLM-Plattformen mit Sitz und Hosting in Deutschland.",
-      "Von der Strategie bis zur Umsetzung: Implementierung, Schulung, Prompting School - inklusive staatlicher Förderung von bis zu 80% für Transformationsprojekte. Schreiben Sie mir kurz, wir klären alles Weitere im Gespräch.",
+      "Ich bin Volljurist und Managementberater mit fast drei Jahrzehnten Praxis in Management, Beratung und Unternehmertum, dazu Führungspositionen bis hin zur Entwicklung und zum internationalen Vertrieb von Sales-Prozessverbesserungen im SAP-Umfeld und zwanzig Jahre Digitalisierungserfahrung. Ich habe mehrfach gegründet, Unternehmen und Agenturen geleitet, Mittelstandsunternehmen in entscheidenden Phasen begleitet und als Anwalt, Berater und Aufsichtsrat unterstützt.",
+      "KI ist für mich ein organisatorisches, menschliches Führungsthema, eines der Compliance und der Datensicherheit. Für die Technik arbeite ich nahtlos mit Spezialisten aus meinem Netzwerk zusammen. Ich setze konsequent auf Multi-LLM-Plattformen mit Eigentümerschaft, Sitz und Hosting in Deutschland, die ich sorgfältig kuratiere und die ein ergänzendes, hervorragendes Serviceangebot mitbringen.",
     ],
     moreInfoUrl: "https://www.nice-network.de",
     manifestoText:
@@ -165,6 +166,8 @@ export const content = {
     phoneLabel: "0621 33 93 71 06",
     phoneHref: "tel:+4962133937106",
     linkedinUrl: "https://www.linkedin.com/in/clemens-gutmann/",
+    emailLabel: "letstalk@nice-network.de",
+    emailHref: "mailto:letstalk@nice-network.de",
   },
 
   footer: {
