@@ -14,7 +14,14 @@
 // Änderung speichern (auf GitHub: "Commit changes") deployt die Seite
 // automatisch neu, meist innerhalb einer Minute live.
 
+// Partner-Link für den Multi-LLM-Trial (Anymize). An mehreren Stellen der
+// Seite verlinkt (Hero-CTA, Leadership-CTA, "Zentrales KI-Management"),
+// deshalb hier einmal zentral gepflegt statt an jeder Stelle einzeln.
+const ANYMIZE_URL = "https://anymize.ai/partner/nice-network";
+
 export const content = {
+  anymizeUrl: ANYMIZE_URL,
+
   nav: {
     byline: "Clemens Gutmann | be nice Managementberatung",
     eyebrow: "KI-AUTONOMIE",
@@ -33,11 +40,11 @@ export const content = {
     // in page.tsx angepasst werden, sonst greift die Einfärbung nicht mehr.
     titleLine1: "Endlich KI einführen - mit voller Kontrolle an jedem Arbeitsplatz.",
     sub: "Als Ihr KI-Strategieberater berate ich Ihre Geschäftsführung, nehme Ihre Mitarbeitenden mit und sorge als Volljurist für DSGVO- und AI-Act-konforme Kontrolle über Kosten und Sicherheit an jedem Arbeitsplatz.",
-    ctaLabel: "Unverbindliches Erstgespräch buchen →",
+    ctaLabel: "Unverbindliches Erstgespräch mit 2 Klicks →",
     ctaMeta: "30 Minuten, ohne Verkaufsdruck",
-    ctaLabel2: "in 3 Minuten Ihre KI-Readiness messen →",
+    ctaLabel2: "28-Tage-Multi-LLM-Trial →",
     ctaMeta2: "Kostenfrei und unverbindlich",
-    ctaUrl2: "https://ki-readiness.nice-network.de/",
+    ctaUrl2: ANYMIZE_URL,
   },
 
   photoSection: {
@@ -75,7 +82,7 @@ export const content = {
       "Ich vermittle Ihnen dafür ein einsatzbereites, sehr gut referenziertes System, mit dem Sie alle relevanten KI-Modelle zu den Kosten eines einzigen Modell-Abos nutzen, testbar in einem 28-tägigen Trial, der auch die Nutzungskosten der Modelle selbst einschließt. Eine vorgelagerte automatische Pseudonymisierung sorgt fast auf Knopfdruck für DSGVO-Sicherheit und schützt Sie vor Haftungsrisiken. Ein eigenes Tool wickelt die Pflichtschulung nach Art. 4 AI-Act automatisiert für Sie ab.",
       "Meistens beginnt das erste Gespräch aber ganz woanders: bei Prozessen und Workflows, die nicht mehr rundlaufen. Genau das ist oft der eigentliche Grund, warum KI im Unternehmen zum strategischen Thema wird. Ich schaue mir diese Prozesse an, finde die Potenziale und entwickle mit Ihnen einen Leitfaden, wie Sie innerhalb Ihrer bestehenden Systeme mit minimalem Aufwand mehr Leistung und mehr Komfort herausholen, auch im Umgang mit Ihren Daten.",
     ],
-    ctaLabel: "Einfach Kontakt aufnehmen und 28 Tage kostenfrei testen, inklusive Modellkosten →",
+    ctaLabel: "28 Tage kostenfrei inkl. ChatGPT & Claude + 30% Rabatt auf Dauer →",
   },
 
   benefits: {
@@ -86,6 +93,7 @@ export const content = {
       {
         title: "Volle Kostenkontrolle",
         text: "Zentrales KI-Management statt verstreuter Einzel-Lizenzen und unklarer Abrechnung. Kostenrisiken durch Preissteigerung einzelner Modelle werden durch jederzeitige Möglichkeit des Modellwechsels optimal begrenzt",
+        link: { text: "Zentrales KI-Management", url: ANYMIZE_URL },
       },
       {
         title: "Datenschutz & Datenautonomie",
@@ -119,6 +127,7 @@ export const content = {
       "Ich bin Volljurist und Managementberater mit fast drei Jahrzehnten Praxis in Management, Beratung und Unternehmertum, dazu Führungspositionen bis hin zur Entwicklung und zum internationalen Vertrieb von Sales-Prozessverbesserungen im SAP-Umfeld und zwanzig Jahre Digitalisierungserfahrung. Ich habe mehrfach gegründet, Unternehmen und Agenturen geleitet, Mittelstandsunternehmen in entscheidenden Phasen begleitet und als Anwalt, Berater und Aufsichtsrat unterstützt.",
       "KI ist für mich ein organisatorisches, menschliches Führungsthema, eines der Compliance und der Datensicherheit. Für die Technik arbeite ich nahtlos mit Spezialisten aus meinem Netzwerk zusammen. Ich setze konsequent auf Multi-LLM-Plattformen mit Eigentümerschaft, Sitz und Hosting in Deutschland, die ich sorgfältig kuratiere und die ein ergänzendes, hervorragendes Serviceangebot mitbringen.",
     ],
+    ctaLabel: "Gerne führen wir ein unverbindliches Gespräch über KI-Strategie →",
     moreInfoUrl: "https://www.nice-network.de",
     manifestoText:
       "Mein Bekenntnis zu einer KI-Nutzung, die Rücksicht auf uns Menschen nimmt, war der Auslöser dafür, dass ich das Human-First AI Manifesto mitinitiiert habe.",

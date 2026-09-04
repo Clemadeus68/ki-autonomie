@@ -84,14 +84,14 @@ export default async function Page({
         <div className="hero-sub-grid">
           <p>{content.hero.sub}</p>
           <div className="cta-stack">
-            <a className="btn" href="#kontakt" target="_blank" rel="noopener">
-              {content.hero.ctaLabel}
-            </a>
-            <span className="cta-meta">{content.hero.ctaMeta}</span>
             <a className="btn btn-secondary" href={content.hero.ctaUrl2} target="_blank" rel="noopener">
               {content.hero.ctaLabel2}
             </a>
             <span className="cta-meta">{content.hero.ctaMeta2}</span>
+            <a className="btn" href="#kontakt" target="_blank" rel="noopener">
+              {content.hero.ctaLabel}
+            </a>
+            <span className="cta-meta">{content.hero.ctaMeta}</span>
           </div>
         </div>
       </section>
@@ -139,7 +139,7 @@ export default async function Page({
             ))}
             <a
               className="btn btn-berry"
-              href={content.contact.calendlyUrl}
+              href={content.anymizeUrl}
               target="_blank"
               rel="noopener"
               style={{ marginTop: 12, display: "inline-block" }}
@@ -176,12 +176,24 @@ export default async function Page({
             <p className="lead">{content.benefits.lead}</p>
           </div>
           <div>
-            {content.benefits.rows.map((row) => (
-              <div className="row-label" key={row.title}>
-                <h3>{row.title}</h3>
-                <p className={row.highlight ? "highlight" : undefined}>{row.text}</p>
-              </div>
-            ))}
+            {content.benefits.rows.map((row) => {
+              const link = "link" in row ? row.link : undefined;
+              const [before, after] = link ? row.text.split(link.text) : [row.text, ""];
+              return (
+                <div className="row-label" key={row.title}>
+                  <h3>{row.title}</h3>
+                  <p className={row.highlight ? "highlight" : undefined}>
+                    {before}
+                    {link && (
+                      <a href={link.url} target="_blank" rel="noopener">
+                        {link.text}
+                      </a>
+                    )}
+                    {after}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -204,7 +216,7 @@ export default async function Page({
               rel="noopener"
               style={{ marginTop: 12, marginBottom: 12, display: "inline-block" }}
             >
-              {content.leadership.ctaLabel}
+              {content.bio.ctaLabel}
             </a>
             <p className="copy">
               Weitere Informationen zu mir finden Sie auf{" "}
