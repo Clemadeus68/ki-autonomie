@@ -33,16 +33,15 @@ export const content = {
   },
 
   hero: {
-    eyebrow: "KI-STRATEGIE, DIE HAFTUNGSRISIKEN MITDENKT - FÜR DEN MITTELSTAND",
-    identity: "KI-Sparringspartner und Volljurist in einem.",
-    // "jedem Arbeitsplatz" wird in page.tsx aus diesem Satz herausgetrennt und
-    // grün eingefärbt (ersetzt die frühere separate titleAccent-Zeile). Wird
-    // der Wortlaut dieser Stelle geändert, muss der exakt gleiche Text auch
-    // in page.tsx angepasst werden, sonst greift die Einfärbung nicht mehr.
-    titleLine1: "KI im Unternehmen - mit voller Kontrolle an jedem Arbeitsplatz.",
-    sub: "Als Ihr KI-Strategieberater berate ich Ihre Geschäftsführung, nehme Ihre Mitarbeitenden mit und sorge als Volljurist für DSGVO- und AI-Act-konforme Kontrolle über Kosten und Sicherheit an jedem Arbeitsplatz.",
+    eyebrow: "KI-SPARRINGSPARTNER FÜR DEN MITTELSTAND",
+    // "Haftungsfrage" wird in page.tsx aus diesem Satz herausgetrennt und im
+    // Beerenton eingefärbt. Wird der Wortlaut dieser Stelle geändert, muss der
+    // exakt gleiche Text auch in page.tsx angepasst werden, sonst greift die
+    // Einfärbung nicht mehr.
+    titleLine1: "KI einführen ist kein IT-Projekt. Es ist eine Haftungsfrage.",
+    sub: "Ich bin Ihr Sparringspartner für KI, von der Strategie bis zur Umsetzung, mit der Geschäftsführung und mit Ihrem Team. Und als Volljurist kläre ich DSGVO und AI-Act, bevor daraus ein Risiko wird.",
     ctaLabel: "Unverbindliches Erstgespräch mit 2 Klicks →",
-    ctaMeta: "30 Minuten, ohne Verkaufsdruck",
+    ctaMeta: "30 Minuten, ohne Verkaufsdruck · Umsetzung bis zu 80% gefördert",
   },
 
   photoSection: {
@@ -77,7 +76,6 @@ export const content = {
     headingRest: "gehört gemanagt, nicht nur genutzt",
     paragraphs: [
       "Alle reden über Agentic Workflows und Metaprompts. Und übersehen dabei das Naheliegende: KI muss gemanagt werden, so nüchtern wie jedes andere Unternehmenssystem auch.",
-      "Ich vermittle Ihnen dafür ein einsatzbereites, sehr gut referenziertes System, mit dem Sie alle relevanten KI-Modelle zu den Kosten eines einzigen Modell-Abos nutzen, testbar in einem 28-tägigen Trial, der auch die Nutzungskosten der Modelle selbst einschließt. Eine vorgelagerte automatische Pseudonymisierung sorgt fast auf Knopfdruck für DSGVO-Sicherheit und schützt Sie vor Haftungsrisiken. Ein eigenes Tool wickelt die Pflichtschulung nach Art. 4 AI-Act automatisiert für Sie ab.",
       "Meistens beginnt das erste Gespräch aber ganz woanders: bei Prozessen und Workflows, die nicht mehr rundlaufen. Genau das ist oft der eigentliche Grund, warum KI im Unternehmen zum strategischen Thema wird. Ich schaue mir diese Prozesse an, finde die Potenziale und entwickle mit Ihnen einen Leitfaden, wie Sie innerhalb Ihrer bestehenden Systeme mit minimalem Aufwand mehr Leistung und mehr Komfort herausholen, auch im Umgang mit Ihren Daten.",
     ],
     trialNote:
@@ -93,11 +91,14 @@ export const content = {
       {
         title: "Volle Kostenkontrolle",
         text: "Zentrales KI-Management statt verstreuter Einzel-Lizenzen und unklarer Abrechnung. Kostenrisiken durch Preissteigerung einzelner Modelle werden durch jederzeitige Möglichkeit des Modellwechsels optimal begrenzt",
-        link: { text: "Zentrales KI-Management", url: ANYMIZE_URL },
       },
       {
         title: "Datenschutz & Datenautonomie",
         text: "Kein geistiges Eigentum fließt in fremde Modelle. Keine Lock-in-Effekte, Ihre Daten bleiben Ihre eigenen.",
+      },
+      {
+        title: "Art-4-Pflichtschulung erledigt",
+        text: "Eigenes Tool mit Zertifikatsausgabe, das auf Wunsch auch Ihre KI-Richtlinie an die Mitarbeitenden schult. Noch keine Richtlinie? Erstellen wir gemeinsam.",
       },
       {
         title: "Umsetzung mit Partnernetzwerk",

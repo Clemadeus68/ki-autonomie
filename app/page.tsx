@@ -70,22 +70,21 @@ export default async function Page({
         <span className="eyebrow">{content.hero.eyebrow}</span>
         <h1 className="hero-title">
           {(() => {
-            const accent = "jedem Arbeitsplatz";
+            const accent = "Haftungsfrage";
             const [before, after] = content.hero.titleLine1.split(accent);
             return (
               <>
                 {before}
-                <span className="accent">{accent}</span>
+                <span className="accent-berry">{accent}</span>
                 {after}
               </>
             );
           })()}
         </h1>
-        <p className="hero-identity">{content.hero.identity}</p>
         <div className="hero-sub-grid">
           <p>{content.hero.sub}</p>
           <div className="cta-stack">
-            <a className="btn" href="#kontakt" target="_blank" rel="noopener">
+            <a className="btn btn-berry" href="#kontakt" target="_blank" rel="noopener">
               {content.hero.ctaLabel}
             </a>
             <span className="cta-meta">{content.hero.ctaMeta}</span>
@@ -187,24 +186,12 @@ export default async function Page({
             <p className="lead">{content.benefits.lead}</p>
           </div>
           <div>
-            {content.benefits.rows.map((row) => {
-              const link = "link" in row ? row.link : undefined;
-              const [before, after] = link ? row.text.split(link.text) : [row.text, ""];
-              return (
-                <div className="row-label" key={row.title}>
-                  <h3>{row.title}</h3>
-                  <p className={row.highlight ? "highlight" : undefined}>
-                    {before}
-                    {link && (
-                      <a href={link.url} target="_blank" rel="noopener">
-                        {link.text}
-                      </a>
-                    )}
-                    {after}
-                  </p>
-                </div>
-              );
-            })}
+            {content.benefits.rows.map((row) => (
+              <div className="row-label" key={row.title}>
+                <h3>{row.title}</h3>
+                <p className={row.highlight ? "highlight" : undefined}>{row.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
