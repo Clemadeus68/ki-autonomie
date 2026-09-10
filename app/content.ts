@@ -24,7 +24,7 @@ export const content = {
 
   nav: {
     byline: "Clemens Gutmann | be nice Managementberatung",
-    eyebrow: "KI-AUTONOMIE",
+    eyebrow: "KI-SPARRINGSPARTNER",
   },
 
   partnerBanner: {
@@ -33,7 +33,8 @@ export const content = {
   },
 
   hero: {
-    eyebrow: "IHR KI-STRATEGIEBERATER FÜR DEN MITTELSTAND",
+    eyebrow: "KI-STRATEGIE, DIE HAFTUNGSRISIKEN MITDENKT - FÜR DEN MITTELSTAND",
+    identity: "KI-Sparringspartner und Volljurist in einem.",
     // "jedem Arbeitsplatz" wird in page.tsx aus diesem Satz herausgetrennt und
     // grün eingefärbt (ersetzt die frühere separate titleAccent-Zeile). Wird
     // der Wortlaut dieser Stelle geändert, muss der exakt gleiche Text auch
@@ -140,13 +141,13 @@ export const content = {
     items: [
       {
         avatar: "/assets/avatar-biffar.png",
-        quote: "„Wir arbeiten seit Jahren mit be nice. Das breite Erfahrungsspektrum, die Fähigkeit zuzuhören und pragmatische Lösungen in Rekordzeit zu entwickeln, beeindruckt mich an Clemens Gutmann und seinem Team immer wieder auf's Neue.“",
+        quote: "„Wir arbeiten seit Jahren mit Clemens Gutmann. Breitestes Erfahrungsspektrum aus Vertrieb und Marketing, Management und dazu Volljurist. Die Fähigkeit zuzuhören und pragmatische Lösungen in Rekordzeit zu entwickeln und sein starkes technisches Expertennetzwerk, das er bei Bedarf einbindet und führt, beeindrucken immer wieder auf's Neue.“",
         name: "Albrecht Biffar",
         role: "CEO BIFFAR Energie",
       },
       {
         avatar: "/assets/avatar-scholl.png",
-        quote: "„Clemens Gutmann und be nice vereinen Erfahrung, souveräne und kreative Beratung sowie Einfühlungsvermögen in Branchen und Ideen. Dazu kommt hervorragende und unkomplizierte Umsetzung. Eine klare Empfehlung!“",
+        quote: "„Clemens Gutmann vereint strategische Erfahrung, modernstes Wissen und kreative Beratung mit Einfühlungsvermögen in Branchen und Ideen. Immer markt- und erfolgsbezogen. Dazu kommt hervorragende und unkomplizierte Umsetzung und Projektmanagement, das bei Bedarf sogar unsere bestehenden Dienstleister und unser internes Team einbindet. Eine klare Empfehlung!“",
         name: "Aljoscha Scholl",
         role: "Managing Director Scholl Real Estate Solutions",
       },

@@ -81,6 +81,7 @@ export default async function Page({
             );
           })()}
         </h1>
+        <p className="hero-identity">{content.hero.identity}</p>
         <div className="hero-sub-grid">
           <p>{content.hero.sub}</p>
           <div className="cta-stack">
