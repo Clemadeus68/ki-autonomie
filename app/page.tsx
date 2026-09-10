@@ -85,10 +85,6 @@ export default async function Page({
         <div className="hero-sub-grid">
           <p>{content.hero.sub}</p>
           <div className="cta-stack">
-            <a className="btn btn-secondary" href={content.hero.ctaUrl2} target="_blank" rel="noopener">
-              {content.hero.ctaLabel2}
-            </a>
-            <span className="cta-meta">{content.hero.ctaMeta2}</span>
             <a className="btn" href="#kontakt" target="_blank" rel="noopener">
               {content.hero.ctaLabel}
             </a>
@@ -138,9 +134,23 @@ export default async function Page({
                 {p}
               </p>
             ))}
+            <p className="copy">
+              {(() => {
+                const [before, after] = content.leadership.trialNote.split("Anymize");
+                return (
+                  <>
+                    {before}
+                    <a href={content.anymizeUrl} target="_blank" rel="noopener">
+                      Anymize
+                    </a>
+                    {after}
+                  </>
+                );
+              })()}
+            </p>
             <a
               className="btn btn-berry"
-              href={content.anymizeUrl}
+              href={content.contact.calendlyUrl}
               target="_blank"
               rel="noopener"
               style={{ marginTop: 12, display: "inline-block" }}

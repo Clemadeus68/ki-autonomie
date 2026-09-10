@@ -39,13 +39,10 @@ export const content = {
     // grün eingefärbt (ersetzt die frühere separate titleAccent-Zeile). Wird
     // der Wortlaut dieser Stelle geändert, muss der exakt gleiche Text auch
     // in page.tsx angepasst werden, sonst greift die Einfärbung nicht mehr.
-    titleLine1: "Endlich KI einführen - mit voller Kontrolle an jedem Arbeitsplatz.",
+    titleLine1: "KI im Unternehmen - mit voller Kontrolle an jedem Arbeitsplatz.",
     sub: "Als Ihr KI-Strategieberater berate ich Ihre Geschäftsführung, nehme Ihre Mitarbeitenden mit und sorge als Volljurist für DSGVO- und AI-Act-konforme Kontrolle über Kosten und Sicherheit an jedem Arbeitsplatz.",
     ctaLabel: "Unverbindliches Erstgespräch mit 2 Klicks →",
     ctaMeta: "30 Minuten, ohne Verkaufsdruck",
-    ctaLabel2: "28-Tage-Multi-LLM-Trial →",
-    ctaMeta2: "Kostenfrei und unverbindlich",
-    ctaUrl2: ANYMIZE_URL,
   },
 
   photoSection: {
@@ -77,13 +74,15 @@ export const content = {
 
   leadership: {
     headingAccent: "KI",
-    headingRest: "managen, bevor sie Sie managt",
+    headingRest: "gehört gemanagt, nicht nur genutzt",
     paragraphs: [
       "Alle reden über Agentic Workflows und Metaprompts. Und übersehen dabei das Naheliegende: KI muss gemanagt werden, so nüchtern wie jedes andere Unternehmenssystem auch.",
       "Ich vermittle Ihnen dafür ein einsatzbereites, sehr gut referenziertes System, mit dem Sie alle relevanten KI-Modelle zu den Kosten eines einzigen Modell-Abos nutzen, testbar in einem 28-tägigen Trial, der auch die Nutzungskosten der Modelle selbst einschließt. Eine vorgelagerte automatische Pseudonymisierung sorgt fast auf Knopfdruck für DSGVO-Sicherheit und schützt Sie vor Haftungsrisiken. Ein eigenes Tool wickelt die Pflichtschulung nach Art. 4 AI-Act automatisiert für Sie ab.",
       "Meistens beginnt das erste Gespräch aber ganz woanders: bei Prozessen und Workflows, die nicht mehr rundlaufen. Genau das ist oft der eigentliche Grund, warum KI im Unternehmen zum strategischen Thema wird. Ich schaue mir diese Prozesse an, finde die Potenziale und entwickle mit Ihnen einen Leitfaden, wie Sie innerhalb Ihrer bestehenden Systeme mit minimalem Aufwand mehr Leistung und mehr Komfort herausholen, auch im Umgang mit Ihren Daten.",
     ],
-    ctaLabel: "28 Tage kostenfrei inkl. ChatGPT & Claude + 30% Rabatt auf Dauer →",
+    trialNote:
+      "Für den technischen Unterbau bin ich Partner von Anymize, dem Multi-LLM-System, das ich einsetze. Sie können es 28 Tage kostenfrei testen.",
+    ctaLabel: "Unverbindliches Erstgespräch →",
   },
 
   benefits: {
