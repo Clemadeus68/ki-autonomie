@@ -82,7 +82,18 @@ export default async function Page({
           })()}
         </h1>
         <div className="hero-sub-grid">
-          <p>{content.hero.sub}</p>
+          <p>
+            {(() => {
+              const [before, after] = content.hero.sub.split("Volljurist");
+              return (
+                <>
+                  {before}
+                  <strong className="accent-green">Volljurist</strong>
+                  {after}
+                </>
+              );
+            })()}
+          </p>
           <div className="cta-stack">
             <a className="btn btn-berry" href="#kontakt" target="_blank" rel="noopener">
               {content.hero.ctaLabel}
@@ -156,6 +167,22 @@ export default async function Page({
             >
               {content.leadership.ctaLabel}
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="block block-dark">
+        <div className="wrap-1200">
+          <h2>
+            <span style={{ color: "var(--green)" }}>{content.enablement.headingAccent}</span>{" "}
+            {content.enablement.headingRest}
+          </h2>
+          <div>
+            {content.enablement.paragraphs.map((p, i) => (
+              <p className="copy" key={i}>
+                {p}
+              </p>
+            ))}
           </div>
         </div>
       </section>

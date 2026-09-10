@@ -34,12 +34,12 @@ export const content = {
 
   hero: {
     eyebrow: "KI-SPARRINGSPARTNER FÜR DEN MITTELSTAND",
-    // "Haftungsfrage" wird in page.tsx aus diesem Satz herausgetrennt und im
-    // Beerenton eingefärbt. Wird der Wortlaut dieser Stelle geändert, muss der
-    // exakt gleiche Text auch in page.tsx angepasst werden, sonst greift die
-    // Einfärbung nicht mehr.
+    // "Haftungsfrage" (H1) und "Volljurist" (sub) werden in page.tsx aus dem
+    // Satz herausgetrennt und eingefärbt (Beere bzw. Grün). Wird der Wortlaut
+    // dieser Stellen geändert, muss der exakt gleiche Text auch in page.tsx
+    // angepasst werden, sonst greift die Einfärbung nicht mehr.
     titleLine1: "KI einführen ist kein IT-Projekt. Es ist eine Haftungsfrage.",
-    sub: "Ich bin Ihr Sparringspartner für KI, von der Strategie bis zur Umsetzung, mit der Geschäftsführung und mit Ihrem Team. Und als Volljurist kläre ich DSGVO und AI-Act, bevor daraus ein Risiko wird.",
+    sub: "Ich bin Ihr Sparringspartner für KI, von der Strategie bis zu Teams, die sicher damit arbeiten. Und als Volljurist halte ich den Betrieb regelkonform: DSGVO, AI-Act und die Bedienfehler, die sonst richtig teuer werden.",
     ctaLabel: "Unverbindliches Erstgespräch mit 2 Klicks →",
     ctaMeta: "30 Minuten, ohne Verkaufsdruck · Umsetzung bis zu 80% gefördert",
   },
@@ -81,6 +81,16 @@ export const content = {
     trialNote:
       "Für den technischen Unterbau bin ich Partner von Anymize, dem Multi-LLM-System, das ich einsetze. Sie können es 28 Tage kostenfrei testen.",
     ctaLabel: "Unverbindliches Erstgespräch →",
+  },
+
+  enablement: {
+    headingAccent: "Damit",
+    headingRest: "KI im Alltag ankommt",
+    paragraphs: [
+      "KI ausrollen ist der einfache Teil. Der Wert entsteht erst, wenn Ihre Leute sie wirklich nutzen - und zwar alle, nicht nur die drei, die sich ohnehin dafür interessieren.",
+      "Ich schule Ihre Teams strukturiert, auf dem Niveau, auf dem sie stehen: von der ersten Berührungsangst bis zur Prompting School für die, die tiefer wollen. Nach dem Go-live bleibe ich als Ansprechpartner dabei, bis es sitzt.",
+      "Über das Qualifizierungschancengesetz sind diese Maßnahmen bis zu 100% des Gehalts der Teilnehmenden gefördert.",
+    ],
   },
 
   benefits: {
