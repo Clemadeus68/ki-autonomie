@@ -6,7 +6,7 @@ import ContactForm from "./ContactForm";
 import FooterBadges from "./Lightbox";
 import ShareButtons from "./ShareButtons";
 import { content } from "./content";
-import { Boldify } from "@/lib/text";
+import { Boldify, Highlight } from "@/lib/text";
 
 function sanitizeSlug(raw: string | string[] | undefined): string | null {
   if (typeof raw !== "string") return null;
@@ -171,7 +171,7 @@ export default async function Page({
         </div>
       </section>
 
-      <section className="block block-dark">
+      <section className="block block-light">
         <div className="wrap-1200">
           <h2>
             <span style={{ color: "var(--green)" }}>{content.enablement.headingAccent}</span>{" "}
@@ -180,23 +180,7 @@ export default async function Page({
           <div>
             {content.enablement.paragraphs.map((p, i) => (
               <p className="copy" key={i}>
-                {p}
-              </p>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="block block-light">
-        <div className="wrap-1200">
-          <h2>
-            <span style={{ color: "var(--green)" }}>{content.whereYouStand.headingAccent}</span>{" "}
-            {content.whereYouStand.headingRest}
-          </h2>
-          <div>
-            {content.whereYouStand.paragraphs.map((p, i) => (
-              <p className="copy" key={i}>
-                {p}
+                <Highlight text={p} words={["80%", "gefördert"]} />
               </p>
             ))}
           </div>

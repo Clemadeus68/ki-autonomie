@@ -8,3 +8,25 @@ export function Boldify({ text }: { text: string }) {
     </>
   );
 }
+
+// Färbt einzelne, exakt genannte Wörter im Text grün ein (Klasse accent-green).
+// Wörter, die nicht im Text vorkommen, werden einfach ignoriert. Wird der
+// Wortlaut im Content geändert, greift die Einfärbung nur, wenn die Wörter
+// hier weiterhin exakt passen.
+export function Highlight({ text, words }: { text: string; words: string[] }) {
+  const escaped = words.map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const parts = text.split(new RegExp(`(${escaped.join("|")})`, "g"));
+  return (
+    <>
+      {parts.map((part, i) =>
+        words.includes(part) ? (
+          <span className="accent-green" key={i}>
+            {part}
+          </span>
+        ) : (
+          part
+        )
+      )}
+    </>
+  );
+}

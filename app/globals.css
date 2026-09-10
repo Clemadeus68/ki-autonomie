@@ -78,7 +78,7 @@ input, textarea { font-family: inherit; }
   display: grid; grid-template-columns: 1.3fr 1fr; gap: 64px; margin-top: 56px; align-items: end;
 }
 .hero-sub-grid p { font-size: 20px; line-height: 1.55; color: var(--body); margin: 0; max-width: 560px; }
-.hero-sub-grid p .accent-green { color: var(--green); }
+.accent-green { color: var(--green); }
 .cta-stack { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
 .cta-meta { color: var(--placeholder); font-size: 13px; }
 

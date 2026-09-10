@@ -62,15 +62,6 @@ export const content = {
     close: "Genau an diesem Punkt steige ich ein.",
   },
 
-  whereYouStand: {
-    headingAccent: "Wo",
-    headingRest: "auch immer Sie stehen",
-    paragraphs: [
-      "Ich gehe zieloffen in das erste Gespräch, weil Unternehmen an ganz unterschiedlichen Punkten stehen. Manche wollen erst einmal grundsätzlich verstehen, wo KI im eigenen Betrieb überhaupt etwas bringt. Andere haben längst entschieden, dass alle Mitarbeitenden KI-Zugang bekommen sollen, und suchen jemanden, der das sauber umsetzt.",
-      "Wieder andere haben ganz konkrete Anwendungsfälle vor Augen, oder sie treibt ein diffuses Gefühl, den Anschluss zu verlieren. Der konkrete Grund ist gar nicht so wichtig. Hauptsache, wir kommen ins Gespräch. Ich begleite Sie auf dem gesamten Weg, bis zu 80% staatlich gefördert",
-    ],
-  },
-
   leadership: {
     headingAccent: "KI",
     headingRest: "gehört gemanagt, nicht nur genutzt",
@@ -84,12 +75,13 @@ export const content = {
   },
 
   enablement: {
-    headingAccent: "Damit",
-    headingRest: "KI im Alltag ankommt",
+    headingAccent: "Onboarding",
+    headingRest: "& Training, damit KI im Alltag ankommt",
     paragraphs: [
       "KI ausrollen ist der einfache Teil. Der Wert entsteht erst, wenn Ihre Leute sie wirklich nutzen - und zwar alle, nicht nur die drei, die sich ohnehin dafür interessieren.",
       "Ich schule Ihre Teams strukturiert, auf dem Niveau, auf dem sie stehen: von der ersten Berührungsangst bis zur Prompting School für die, die tiefer wollen. Nach dem Go-live bleibe ich als Ansprechpartner dabei, bis es sitzt.",
-      "Über das Qualifizierungschancengesetz sind diese Maßnahmen bis zu 100% des Gehalts der Teilnehmenden gefördert.",
+      "Über verschiedene KMU-Förderprogramme sind bis zu 80% meiner Kosten staatlich gefördert. Die Formalitäten erledigen wir für Sie.",
+      "Sollen Mitarbeitende gezielt für digitale Aufgaben weiterqualifiziert werden, berate ich Sie außerdem zum Qualifizierungschancengesetz - darüber können Sie bis zu 100% des Bruttolohns für den Schulungszeitraum ersetzt bekommen.",
     ],
   },
 
@@ -119,13 +111,8 @@ export const content = {
         text: "Private-LLM-Lösungen auf eigenen, abgesicherten Cloud-Serverinstanzen.",
       },
       {
-        title: "Bis zu 80% staatliche Förderung",
-        text: "Beratungs- und Umsetzungsprojekte werden gefördert. Wir kümmern uns um die Formalitäten und prüfen die Voraussetzungen für Sie. Kostenfrei!",
-        highlight: true,
-      },
-      {
-        title: "Weiterbildung 100% gefördert",
-        text: "Schulungs- und Weiterbildungsmaßnahmen nach dem Qualifizierungschancengesetz (QCG) - zu 100% des Gehalts der teilnehmenden Mitarbeitenden, über meine Partnerakademien.",
+        title: "Staatlich gefördert",
+        text: "Bis zu 80% meiner Kosten über KMU-Förderprogramme, dazu bis zu 100% Lohnersatz für Weiterbildung über das QCG. Die Formalitäten erledigen wir.",
         highlight: true,
       },
     ],
