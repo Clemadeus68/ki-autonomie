@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const siteUrl = "https://ki-autonomie.nice-network.de";
 const title = "be nice - KI-Autonomie";
 const description =
-  "KI-Einführung für den Mittelstand - mit be nice Managementberatung. Strategische Beratung von Clemens Gutmann.";
+  "KI-Lotse und Macher für den Mittelstand: Clemens Gutmann führt KI-Projekte von der Strategie bis zur Umsetzung, mit Förderung über BAFA und INQA.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

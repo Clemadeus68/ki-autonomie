@@ -208,6 +208,22 @@ export default async function Page({
         </div>
       </section>
 
+      <section className="block block-dark">
+        <div className="wrap-1200">
+          <h2>
+            <span style={{ color: "var(--green)" }}>{content.funding.headingAccent}</span>{" "}
+            {content.funding.headingRest}
+          </h2>
+          <div>
+            {content.funding.paragraphs.map((p, i) => (
+              <p className="copy" key={i}>
+                <Highlight text={p} words={["50%", "80%"]} />
+              </p>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="block block-light bio-section">
         <div className="wrap-1200">
           <h2>

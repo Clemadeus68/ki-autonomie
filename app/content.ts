@@ -24,7 +24,7 @@ export const content = {
 
   nav: {
     byline: "Clemens Gutmann | be nice Managementberatung",
-    eyebrow: "KI-SPARRINGSPARTNER",
+    eyebrow: "LOTSE & MACHER",
   },
 
   partnerBanner: {
@@ -33,16 +33,16 @@ export const content = {
   },
 
   hero: {
-    eyebrow: "KI-SPARRINGSPARTNER FÜR DEN MITTELSTAND",
+    eyebrow: "LOTSE & MACHER FÜR DEN MITTELSTAND",
     // "Haftungsfrage" (H1) und "Volljurist" (sub) werden in page.tsx aus dem
     // Satz herausgetrennt und eingefärbt (Beere bzw. Grün). Wird der Wortlaut
     // dieser Stellen geändert, muss der exakt gleiche Text auch in page.tsx
     // angepasst werden, sonst greift die Einfärbung nicht mehr.
     titleLine1: "KI einführen ist kein IT-Projekt. Es ist eine Haftungsfrage.",
-    sub: "Ich bin Ihr Sparringspartner für KI, von der Strategie bis zu Teams, die sicher damit arbeiten. Und als Volljurist halte ich den Betrieb regelkonform: DSGVO, AI-Act und die Bedienfehler, die sonst richtig teuer werden.",
+    sub: "Ich lotse Sie durch die KI-Landschaft und übernehme die Umsetzung selbst, bis Ihre Teams sicher damit arbeiten. Als Volljurist halte ich dabei DSGVO und AI-Act im Blick, damit kein Bedienfehler zum teuren Problem wird.",
     ctaLabel: "Unverbindliches Erstgespräch mit 2 Klicks →",
     ctaMeta: "30 Minuten, ohne Verkaufsdruck",
-    fundingBadge: "Bis zu 80% staatlich gefördert, unser Backoffice kümmert sich um die Formalitäten.",
+    fundingBadge: "Förderfähig über BAFA und INQA, bis zu 80% der Kosten. Die Antragstellung übernehme ich.",
   },
 
   photoSection: {
@@ -81,14 +81,14 @@ export const content = {
     paragraphs: [
       "KI ausrollen ist der einfache Teil. Der Wert entsteht erst, wenn Ihre Leute sie wirklich nutzen - und zwar alle, nicht nur die drei, die sich ohnehin dafür interessieren.",
       "Ich schule Ihre Teams strukturiert, auf dem Niveau, auf dem sie stehen: von der ersten Berührungsangst bis zur Prompting School für die, die tiefer wollen. Nach dem Go-live bleibe ich als Ansprechpartner dabei, bis es sitzt.",
-      "Über verschiedene KMU-Förderprogramme sind bis zu 80% meiner Kosten staatlich gefördert. Die Formalitäten erledigen wir für Sie.",
+      "Über verschiedene KMU-Förderprogramme sind bis zu 80% meiner Kosten staatlich gefördert. Die Formalitäten übernehme ich für Sie.",
       "Sollen Mitarbeitende gezielt für digitale Aufgaben weiterqualifiziert werden, berate ich Sie außerdem zum Qualifizierungschancengesetz - darüber können Sie bis zu 100% des Bruttolohns für den Schulungszeitraum ersetzt bekommen.",
     ],
   },
 
   benefits: {
     headingAccent: "Was",
-    headingRest: "die Zusammenarbeit mit mir sicherstellt",
+    headingRest: "ich für Sie sicherstelle",
     lead: "Die Einführung läuft technisch auf einer Multi-LLM-Plattform statt an einen einzelnen Anbieter gebunden zu sein.",
     rows: [
       {
@@ -101,7 +101,7 @@ export const content = {
       },
       {
         title: "Art-4-Pflichtschulung erledigt",
-        text: "Eigenes Tool mit Zertifikatsausgabe, das auf Wunsch auch Ihre KI-Richtlinie an die Mitarbeitenden schult. Noch keine Richtlinie? Erstellen wir gemeinsam.",
+        text: "Eigenes Tool mit Zertifikatsausgabe, das auf Wunsch auch Ihre KI-Richtlinie an die Mitarbeitenden schult. Noch keine Richtlinie? Erstelle ich für Sie.",
       },
       {
         title: "Umsetzung mit Partnernetzwerk",
@@ -113,9 +113,23 @@ export const content = {
       },
       {
         title: "Staatlich gefördert",
-        text: "Bis zu 80% meiner Kosten über KMU-Förderprogramme, dazu bis zu 100% Lohnersatz für Weiterbildung über das QCG. Die Formalitäten erledigen wir.",
+        text: "Bis zu 80% meiner Kosten über KMU-Förderprogramme, dazu bis zu 100% Lohnersatz für Weiterbildung über das QCG. Die Formalitäten übernehme ich.",
         highlight: true,
       },
+      {
+        title: "Keine Rechtsberatung",
+        text: "Für rechtsverbindliche Aussagen arbeite ich mit Partnerkanzleien auf Basis fairer Pauschalen zusammen.",
+      },
+    ],
+  },
+
+  funding: {
+    headingAccent: "Zwei",
+    headingRest: "Wege, wie der Staat mitzahlt",
+    paragraphs: [
+      "Das BAFA-Förderprogramm übernimmt 50% meiner Beratungskosten für die Ausgangsanalyse und Erarbeitung der Umsetzungsplanung. Das ist ein kurzfristiges Projekt und auf EUR 3.500,00 gedeckelt (davon werden 50% gefördert).",
+      "Das INQA-KMU-Coaching fördert 80% Ihrer Kosten für digitale Transformationsprojekte, also die Umsetzung gemeinsam mit Ihrem Team.",
+      "Die Prüfung der Voraussetzungen und Antragstellung ist Teil meiner Leistung, ich übernehme sie mit meinem Backoffice für Sie.",
     ],
   },
 
