@@ -42,7 +42,7 @@ export const content = {
     sub: "Ich lotse Sie durch die KI-Landschaft und übernehme die Umsetzung selbst, bis Ihre Teams sicher damit arbeiten. Als Volljurist halte ich dabei DSGVO und AI-Act im Blick, damit kein Bedienfehler zum teuren Problem wird.",
     ctaLabel: "Unverbindliches Erstgespräch mit 2 Klicks →",
     ctaMeta: "30 Minuten, ohne Verkaufsdruck",
-    fundingBadge: "Förderfähig über BAFA und INQA, bis zu 80% der Kosten. Die Antragstellung übernehme ich.",
+    fundingBadge: "Das Erstgespräch ist kostenlos. Ihr Projekt danach ist über BAFA und INQA förderfähig, bis zu 80% der Kosten. Die Antragstellung übernehme ich.",
   },
 
   photoSection: {
