@@ -81,6 +81,11 @@ input, textarea { font-family: inherit; }
 .accent-green { color: var(--green); }
 .cta-stack { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
 .cta-meta { color: var(--placeholder); font-size: 13px; }
+.funding-badge {
+  display: inline-block; background: rgba(139, 197, 63, 0.14); border-left: 3px solid var(--green);
+  color: var(--ink); font-size: 14px; font-weight: 700; line-height: 1.4; padding: 10px 14px;
+  border-radius: 4px; max-width: 420px;
+}
 
 .btn {
   background: var(--ink); color: #fff; font-weight: 700; padding: 18px 32px;

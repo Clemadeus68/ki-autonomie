@@ -41,7 +41,8 @@ export const content = {
     titleLine1: "KI einführen ist kein IT-Projekt. Es ist eine Haftungsfrage.",
     sub: "Ich bin Ihr Sparringspartner für KI, von der Strategie bis zu Teams, die sicher damit arbeiten. Und als Volljurist halte ich den Betrieb regelkonform: DSGVO, AI-Act und die Bedienfehler, die sonst richtig teuer werden.",
     ctaLabel: "Unverbindliches Erstgespräch mit 2 Klicks →",
-    ctaMeta: "30 Minuten, ohne Verkaufsdruck · Umsetzung bis zu 80% gefördert",
+    ctaMeta: "30 Minuten, ohne Verkaufsdruck",
+    fundingBadge: "Bis zu 80% staatlich gefördert, unser Backoffice kümmert sich um die Formalitäten.",
   },
 
   photoSection: {

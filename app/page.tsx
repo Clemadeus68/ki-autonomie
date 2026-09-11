@@ -98,6 +98,7 @@ export default async function Page({
             <a className="btn btn-berry" href="#kontakt" target="_blank" rel="noopener">
               {content.hero.ctaLabel}
             </a>
+            <span className="funding-badge">✓ {content.hero.fundingBadge}</span>
             <span className="cta-meta">{content.hero.ctaMeta}</span>
           </div>
         </div>
