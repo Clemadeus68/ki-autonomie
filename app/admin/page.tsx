@@ -33,7 +33,7 @@ export default async function AdminPage() {
 
   return (
     <div className="wrap-wide admin">
-      <h1>KI-Autonomie - Admin</h1>
+      <h1>Lotse & Macher - Admin</h1>
 
       <section>
         <h2>Letzte 20 Klicks</h2>

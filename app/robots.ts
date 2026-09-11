@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/admin"],
     },
-    sitemap: "https://ki-autonomie.nice-network.de/sitemap.xml",
+    sitemap: "https://lotseundmacher.nice-network.de/sitemap.xml",
   };
 }

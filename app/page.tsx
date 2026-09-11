@@ -35,7 +35,7 @@ export default async function Page({
 
   const hdrs = await headers();
   const proto = hdrs.get("x-forwarded-proto") ?? "https";
-  const host = hdrs.get("host") ?? "ki-autonomie.nice-network.de";
+  const host = hdrs.get("host") ?? "lotseundmacher.nice-network.de";
   const baseUrl = `${proto}://${host}`;
 
   await prisma.klick.create({

@@ -22,7 +22,7 @@ export default function Datenschutz() {
         <br />
         E-Mail: letstalk@nice-network.de
         <br />
-        Web: ki-autonomie.nice-network.de
+        Web: lotseundmacher.nice-network.de
       </p>
 
       <h2>III. Arten der verarbeiteten Daten</h2>

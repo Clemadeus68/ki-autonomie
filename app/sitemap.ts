@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://ki-autonomie.nice-network.de";
+const baseUrl = "https://lotseundmacher.nice-network.de";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

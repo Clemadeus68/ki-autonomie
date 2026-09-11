@@ -6,7 +6,7 @@ function shareUrl(baseUrl: string, partnerSlug: string | null): string {
   return partnerSlug ? `${baseUrl}/?ref=${partnerSlug}` : `${baseUrl}/`;
 }
 
-const SHARE_TEXT = "KI-Autonomie – KI-Einführung für den Mittelstand, ohne Lock-in-Effekte:";
+const SHARE_TEXT = "Lotse & Macher - KI-Strategie und Umsetzung für den Mittelstand, ohne Lock-in-Effekte:";
 
 function WhatsAppIcon() {
   return (
@@ -88,7 +88,7 @@ export default function ShareButtons({
         <LinkedInIcon />
       </a>
       <a
-        href={`mailto:?subject=${encodeURIComponent("KI-Autonomie")}&body=${encodeURIComponent(`${SHARE_TEXT}\n\n${urlFor()}`)}`}
+        href={`mailto:?subject=${encodeURIComponent("Lotse & Macher")}&body=${encodeURIComponent(`${SHARE_TEXT}\n\n${urlFor()}`)}`}
         aria-label="Per E-Mail teilen"
         title="Per E-Mail teilen"
       >
