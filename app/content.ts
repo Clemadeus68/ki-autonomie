@@ -38,8 +38,8 @@ export const content = {
     // Satz herausgetrennt und eingefärbt (Beere bzw. Grün). Wird der Wortlaut
     // dieser Stellen geändert, muss der exakt gleiche Text auch in page.tsx
     // angepasst werden, sonst greift die Einfärbung nicht mehr.
-    titleLine1: "KI einführen ist kein IT-Projekt. Es ist eine Haftungsfrage.",
-    sub: "Ich lotse Sie durch die KI-Landschaft und übernehme die Umsetzung selbst, bis Ihre Teams sicher damit arbeiten. Als Volljurist halte ich dabei DSGVO und AI-Act im Blick, damit kein Bedienfehler zum teuren Problem wird.",
+    titleLine1: "KI einführen ist kein IT-Projekt. Es ist eine Führungs- und Haftungsfrage.",
+    sub: "KI-Einführung ist für mich zuerst ein Führungsthema: wie Ihr Team Tempo, Klarheit und Energie behält, während sich Prozesse verändern. Ich lotse Sie durch die KI-Landschaft und übernehme die Umsetzung selbst, bis Ihre Teams sicher damit arbeiten. Als Volljurist halte ich dabei DSGVO und AI-Act im Blick, damit kein Bedienfehler zum teuren Problem wird.",
     ctaLabel: "Unverbindliches Erstgespräch mit 2 Klicks →",
     ctaMeta: "30 Minuten, ohne Verkaufsdruck",
     fundingBadge: "Das Erstgespräch ist kostenlos. Ihr Projekt danach ist über BAFA und INQA förderfähig, bis zu 80% der Kosten. Die Antragstellung übernehme ich.",
@@ -59,6 +59,7 @@ export const content = {
       "Sie wollen nicht einfach **jedem** Zugang geben, aus Sorge, dass die **Tokenkosten** explodieren.",
       "**DSGVO** und **AI-Act** wirken wie ein Fass ohne Boden - einen extra Anwalt wollen Sie dafür nicht bezahlen.",
       "Nicht jede und jeder im Team ist gleich technikaffin - Sie wissen nicht, wer die Einführung wirklich mitgehen kann.",
+      "Ihr Team arbeitet bereits am Limit, und die Sorge ist, dass eine schlecht eingeführte KI diesen Druck weiter verschärft.",
     ],
     close: "Genau an diesem Punkt steige ich ein.",
   },

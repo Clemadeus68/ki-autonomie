@@ -83,16 +83,15 @@ export default async function Page({
         </h1>
         <div className="hero-sub-grid">
           <p>
-            {(() => {
-              const [before, after] = content.hero.sub.split("Volljurist");
-              return (
-                <>
-                  {before}
-                  <strong className="accent-green">Volljurist</strong>
-                  {after}
-                </>
-              );
-            })()}
+            {content.hero.sub.split(/(Volljurist)/g).map((part, i) =>
+              part === "Volljurist" ? (
+                <strong className="accent-green" key={i}>
+                  {part}
+                </strong>
+              ) : (
+                part
+              )
+            )}
           </p>
           <div className="cta-stack">
             <a className="btn btn-berry" href="#kontakt" target="_blank" rel="noopener">
