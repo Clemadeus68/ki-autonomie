@@ -75,9 +75,10 @@ input, textarea { font-family: inherit; }
 .hero-title .accent { color: var(--green); }
 .hero-title .accent-berry { color: var(--berry); }
 .hero-sub-grid {
-  display: grid; grid-template-columns: 1.3fr 1fr; gap: 64px; margin-top: 56px; align-items: end;
+  display: grid; grid-template-columns: 1.3fr 1fr; gap: 64px; margin-top: 56px; align-items: start;
 }
 .hero-sub-grid p { font-size: 20px; line-height: 1.55; color: var(--body); margin: 0; max-width: 560px; }
+.hero-sub-grid p + p { margin-top: 16px; }
 .accent-green { color: var(--green); }
 .cta-stack { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
 .cta-meta { color: var(--placeholder); font-size: 13px; }

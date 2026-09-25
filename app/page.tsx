@@ -82,17 +82,13 @@ export default async function Page({
           })()}
         </h1>
         <div className="hero-sub-grid">
-          <p>
-            {content.hero.sub.split(/(Volljurist)/g).map((part, i) =>
-              part === "Volljurist" ? (
-                <strong className="accent-green" key={i}>
-                  {part}
-                </strong>
-              ) : (
-                part
-              )
-            )}
-          </p>
+          <div>
+            {content.hero.subParagraphs.map((p, i) => (
+              <p key={i}>
+                <Highlight text={p} words={["Volljurist"]} bold />
+              </p>
+            ))}
+          </div>
           <div className="cta-stack">
             <a className="btn btn-berry" href="#kontakt" target="_blank" rel="noopener">
               {content.hero.ctaLabel}
