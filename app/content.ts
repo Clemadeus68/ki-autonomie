@@ -40,7 +40,7 @@ export const content = {
     // auch in page.tsx angepasst werden, sonst greift die Einfärbung nicht mehr.
     titleLine1: "KI einführen ist kein IT-Projekt. Es ist eine Führungs- und Haftungsfrage.",
     subParagraphs: [
-      "KI-Einführung ist ein Führungsthema: Wo beginnen? Was sind sinnvolle (und auch messbare) Ziele? Wie können wir die - durchaus bestehenden - Ängste mancher Mitarbeitenden abbauen, ohne dass der Schwung verlorengeht? Wie schaffen wir eine Sicherheitszone für Daten, sodass die Mitarbeitenden experimentieren und kreativ sein können, um Prozesse zu verbessern. Ohne dass Gefahr von Datenschutzverstößen oder sonstigem „Ärger“ droht?",
+      "KI-Einführung ist ein Führungsthema: Wo beginnen? Was sind sinnvolle (und auch messbare) Ziele? Wie kann ich die - durchaus bestehenden - Ängste mancher Mitarbeitenden abbauen, ohne dass der Schwung verlorengeht? Wie schaffe ich eine Sicherheitszone für Daten, sodass die Mitarbeitenden experimentieren und kreativ sein können, um Prozesse zu verbessern. Ohne dass Gefahr von Datenschutzverstößen oder sonstigem „Ärger“ droht?",
       "Ich lotse Sie durch die KI-Landschaft, berate bezüglich der ersten Schritte und gebe Ihnen strategischen wie praktischen Rat. Ich organisiere passende Schulungen und Trainings ab dem niedrigsten Niveau und baue allseits Sorgen und Ängste ab. Hierbei arbeite ich empathisch und hands-on.",
       "Als Volljurist halte ich dabei DSGVO und AI-Act im Blick, damit kein Bedienfehler zum teuren Problem wird.",
     ],
